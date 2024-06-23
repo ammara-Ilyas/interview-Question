@@ -1,0 +1,246 @@
+
+
+20 interview question answer of style cascading
+
+2001-2011: Various modules of CSS3 were developed and standardized over time. Some of the notable modules and features include:
+
+Selectors: Advanced selectors like attribute selectors, pseudo-classes, and pseudo-elements.
+Box Model: Enhancements in margin, border, padding, and box-sizing properties.
+Backgrounds and Borders: Features like multiple backgrounds, border images, and rounded corners.
+Text Effects: Text shadow and advanced font properties.
+Transformations and Animations: 2D/3D transforms, transitions, and keyframe animations.
+Media Queries: Enabling responsive web design by applying styles based on device characteristics.
+
+Certainly! Here are 20 interview questions and answers related to Cascading Style Sheets (CSS):
+
+What is CSS?
+CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in markup language like HTML.
+
+What are the advantages of using CSS?
+CSS separates content from presentation, making it easier to maintain and update websites. It also allows for greater consistency across a website and facilitates faster page loading times. enables responsive design, and adheres to global web standards, saving time 
+
+What is the purpose of cascading in CSS?
+Cascading in CSS refers to the process of combining multiple style sheets and resolving conflicts between conflicting styles.
+
+Explain the concept of specificity in CSS.
+Specificity determines which CSS rule is applied to an element when multiple rules have conflicting selectors. It is calculated based on the selector's type, class, ID, and inline styles.
+
+What are the different ways to include CSS in a web page?
+CSS can be included in a web page using external style sheets, internal style sheets, or inline styles.
+
+Media queries in CSS are a powerful tool for creating responsive designs that adapt to different screen sizes and device characteristics. They allow you to apply different styles depending on the conditions such as screen width, height, orientation, resolution, and more.
+
+AJAX (Asynchronous JavaScript and XML) is a technique in web development that allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page. AJAX is commonly used with JavaScript and XML, but it can also work with other data formats, such as JSON.
+
+difference b/t arrow and simple functin
+
+What is the box model in CSS?
+The box model in CSS describes how elements are rendered on a web page, including their content, padding, border, and margin.
+
+How can you center an element horizontally and vertically in CSS?
+You can center an element horizontally using the margin: 0 auto; property and vertically using flexbox or CSS Grid techniques.
+
+What is the difference between display: block, display: inline, and display: inline-block?
+display: block makes an element a block-level element, display: inline makes it an inline-level element, and display: inline-block makes it behave like an inline element but with block-level properties.
+
+What is the purpose of the float property in CSS?
+The float property is used to align elements to the left or right within their containing element, allowing other content to wrap around them.
+
+Explain the difference between position: relative, position: absolute, and position: fixed.
+position: relative positions an element relative to its normal position, position: absolute positions it relative to its nearest positioned ancestor, and position: fixed positions it relative to the viewport.
+
+How do you handle browser compatibility issues in CSS?
+Browser compatibility issues can be addressed by using vendor prefixes, feature detection, and progressive enhancement techniques like graceful degradation.
+
+What is a CSS preprocessor, and why would you use one?
+A CSS preprocessor extends the functionality of CSS by adding features like variables, nesting, and mixins. It helps in writing maintainable and efficient CSS code.
+
+What is the box-sizing property, and why is it useful?
+The box-sizing property determines how the width and height of an element are calculated, including or excluding padding and border. It helps in creating predictable layouts.
+
+Explain the difference between em and rem units in CSS.
+em units are relative to the font size of the element itself, while rem units are relative to the font size of the root element (html).
+
+How do you implement responsive design using CSS?
+Responsive design can be implemented using media queries, flexible layouts (such as percentages or flexbox), and fluid images.
+
+What is the CSS z-index property used for?
+The z-index property determines the stacking order of elements on a web page, allowing you to control which elements appear on top of others.
+
+What is the purpose of the @media rule in CSS?
+The @media rule is used to apply different styles based on the characteristics of the device, such as screen size, orientation, and resolution.
+
+How can you optimize CSS for better performance?
+CSS performance can be improved by minimizing the use of !important, reducing redundancy in stylesheets, and using shorthand properties.
+
+What are CSS sprites, and how do they work?
+CSS sprites combine multiple images into a single image file and use CSS background positioning to display specific images within a web page. This technique reduces the number of server requests and improves page load times.
+
+What is the currentColor keyword in CSS, and when would you use it?
+The currentColor keyword represents the computed value of the color property and can be used to make an element's border, outline, or box shadow match its text color dynamically.
+CSS Variables, also known as CSS Custom Properties, are entities defined by developers to store reusable values within a CSS stylesheet. They differ from traditional CSS properties in that they allow values to be stored and reused throughout the stylesheet, offering more flexibility and maintainability.
+
+
+
+In Cascading Style Sheets (CSS), there are various positions that elements can be styled relative to. Here are the key differences between them:
+
+Static Position:
+Default position for all elements.
+Elements are positioned according to the normal flow of the document.
+They are not affected by the top, bottom, left, right, and z-index properties.
+Relative Position:
+Elements are positioned relative to their normal position in the document flow.
+Using properties like top, bottom, left, and right, you can offset the element from its normal position.
+Other elements on the page are not affected by the position change of the relatively positioned element.
+Absolute Position:
+Elements are removed from the normal document flow.
+Positioned relative to the nearest ancestor element that has a position other than static (usually the nearest parent element).
+Using properties like top, bottom, left, and right, you can position the element precisely within its containing element.
+Absolute positioned elements can overlap other elements on the page.
+Fixed Position:
+Elements are removed from the normal document flow.
+Positioned relative to the viewport (browser window).
+They remain fixed in their position even when the page is scrolled.
+Commonly used for elements like navigation bars or advertisements that should remain visible as the user scrolls.
+Sticky Position:
+Hybrid of relative and fixed positioning.
+Initially positioned according to the normal flow of the document.
+Becomes fixed (like fixed positioning) once it reaches a specified scroll position.
+Useful for creating elements that stick to the top or bottom of the viewport as the user scrolls.
+
+
+CSS stands for Cascading Style Sheets. It is a style sheet language used to describe the presentation of a document written in a markup language like HTML. CSS describes how HTML elements should be displayed on screen, in print, or in other media.
+CSS is a style sheet language used to control the presentation and appearance of HTML elements on a webpage.
+It allows developers to define styles such as colors, fonts, sizes, margins, paddings, borders, positioning, and more for HTML element
+HTML is a markup language used to structure content on web pages.
+It provides the basic building blocks of a webpage, such as text, images, links, headings, paragraphs, lists, tables, forms, and more.
+HTML is a markup language used to structure content on web pages.
+It provides the basic building blocks of a webpage, such as text, images, links, headings, paragraphs, lists, tables, forms, and more.
+Open source code refers to software code that is made freely available to the public, allowing anyone to view, modify, and distribute it. The source code is typically licensed under an open source license, which grants users certain rights to use, modify, and distribute the software.
+Create React App (CRA): Create React App is a command-line tool developed by Facebook that sets up a new React project with a sensible default configuration. It provides a modern build setup with no configuration required, allowing developers to focus on writing code.
+
+React Developer Tools: This is a browser extension available for Chrome and Firefox that allows developers to inspect React component hierarchies, view component props and state, and debug React applications more effectively.
+
+Redux: Redux is a predictable state container for JavaScript apps, often used with React to manage application state in a predictable manner. It helps in managing complex application states and enables better organization of data flow within React applications.
+
+React Router: React Router is a popular routing library for React applications. It enables developers to define and manage different routes within a single-page application, allowing for navigation between different views and components.
+
+Webpack: Webpack is a module bundler used to bundle JavaScript files for usage in a browser. It is often used in React projects to bundle JavaScript and assets, handle imports, and optimize code for production.
+
+Babel: Babel is a JavaScript compiler that allows developers to use the latest JavaScript features in their codebase by transforming newer JavaScript syntax into older versions that are supported by most browsers.
+
+ESLint: ESLint is a static code analysis tool used to find and fix problems in JavaScript code. It helps maintain code quality and consistency by enforcing coding standards and best practices.
+A library is a collection of reusable code modules or functions that can be directly called by an application to perform specific tasks or operations.
+In a library, the control flow of the application remains with the developer. The developer decides when and how to use the library's functionalities.
+A framework is a more comprehensive software package that provides a structured architecture and a set of rules, conventions, and pre-defined functionalities to guide the development of an application.
+In a framework, the control flow of the application is inverted. Instead of the developer calling the framework's functionalities, the framework calls the developer's code at specific points according to its predefined structure.
+"use client";
+import React, { useRef, useState } from "react";
+import ProductCard from "../widgets/product/Card";
+import { Swiper, SwiperSlide } from "swiper/react";
+//////////import reducer cart
+import { useSelector } from "react-redux";
+import Link from "next/link";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+const SaleSlider = () => {
+  const productList = useSelector((state) => state.cart.products);
+
+  return (
+    <div className="border-2 w-full ml-auto">
+      <Swiper
+        spaceBetween={30}
+        slidesPerView={3}
+        loop={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        // navigation={true}
+        modules={[Autoplay]}
+        className="mySwiper"
+      >
+        {productList.map((item, i) => (
+          <SwiperSlide>
+            <div
+              className="card w-full border-2   hover:shadow-xl p-4 transition"
+              key={item.id}
+            >
+              <ProductCard product={item} />
+            </div>{" "}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
+
+export default SaleSlider;
+card.js
+"use client";
+import React from "react";
+import { FaHeart, FaRetweet, FaShoppingCart } from "react-icons/fa";
+import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/slice/cartSlice";
+const ProductCard = ({ product }) => {
+  const dispatch = useDispatch();
+  return (
+    <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl">
+      <div
+        className="relative bg-cover bg-center h-64"
+        style={{ backgroundImage: `url(${product.image})` }}
+      >
+        <div className="absolute top-0 left-0 bg-red-500 text-white px-2 py-3 rounded-full text-sm ">
+          20%
+        </div>
+        <ul className=" bottom-2 border-2 bg-black text-white border-black w-full left-2 flex items-center justify-center text-xl space-x-2">
+          <li>
+            <Link
+              href="#"
+              className="bg-red-700 p-2 rounded-full hover:text-red-500"
+              onClick={() => dispatch(addToCart(product))}
+            >
+              <FaHeart />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#"
+              className="bg-white rounded-full hover:text-blue-500"
+            >
+              <FaRetweet />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#"
+              className="bg-white rounded-full hover:text-green-500"
+            >
+              <FaShoppingCart />
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="p-4">
+        <h5 className="text-lg font-bold text-gray-900 mt-1">
+          <Link href="#" className="capitalize text-xl">
+            {product.category}
+          </Link>
+        </h5>
+        <div className="text-xl font-semibold text-red-500 mt-2">
+          ${product.price - Math.floor((product.price / 100) * 20)} <br />
+          <span className="text-gray-500 line-through">${product.price}</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProductCard;

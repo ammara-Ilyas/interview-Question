@@ -1,0 +1,75 @@
+react toastify library
+tailwind scrollbar
+three.js is library for 3d
+web animation library gisap
+What is React.js?
+Randomly Questions
+React.js is a JavaScript library for building user interfaces or UI components.
+Explain the key features of React.
+
+Virtual DOM
+JSX
+Component-based architecture
+Unidirectional data flow
+React hooks (introduced in React 16.8)
+What is JSX?
+
+JSX is a syntax extension for JavaScript recommended by React. It allows mixing HTML with JavaScript, making it easier to write React components.
+What is the Virtual DOM in React?
+
+The Virtual DOM is a lightweight copy of the actual DOM in memory. React uses it to improve performance by minimizing the number of direct manipulations to the actual DOM.
+Explain the concept of components in React.
+
+Components are the building blocks of a React application. They are reusable, self-contained pieces of code that represent a part of the user interface.
+What are React props?
+
+Props (short for properties) are used to pass data from a parent component to a child component in React.
+What is the state in React?
+
+The state is a built-in object in React components that is used to keep track of the component's data and trigger re-rendering when the data changes.
+What is the difference between state and props in React?
+
+Props are passed from parent to child components, and they are immutable. State is managed within a component and can be changed.
+Explain the component lifecycle in React.
+
+The component lifecycle consists of three main phases: Mounting, Updating, and Unmounting. Each phase has specific lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+What are React hooks?
+
+React hooks are functions that enable the use of state and lifecycle features in functional components. Examples include useState for managing state and useEffect for handling side effects.
+What is the purpose of the useEffect hook?
+
+useEffect is used for performing side effects in functional components. It allows you to manage lifecycle events, such as data fetching, subscriptions, or manually changing the DOM.
+What is the purpose of the useState hook?
+
+The useState hook is used to add state to functional components. It returns an array with the current state value and a function that allows you to update the state.
+Explain the concept of controlled and uncontrolled components in React.
+
+Controlled components are those whose state is controlled by React, while uncontrolled components have their state managed by the DOM itself.
+What is React Router, and how does it work?
+
+React Router is a library for handling navigation in React applications. It provides a declarative way to define routes and navigate between different views.
+What is the significance of keys in React lists?
+
+Keys are used to uniquely identify elements in a React list. They help React efficiently update the DOM by recognizing which items have changed, been added, or been removed.
+These questions cover a range of topics related to React.js and can help assess a candidate's understanding of the library and its concepts. Depending on the job position, interviewers may ask more in-depth questions or focus on specific areas of expertise.
+
+20 question of react js
+What is React?
+limitations of React?
+advantages of using React?
+Explain Strict Mode in React
+Can React Hook replace Redux?
+useState() and useEffect() in React?
+How to prevent re-renders in React?
+Form-Handing & Validation techniques?
+What is the application of lazy loading?
+What is the benefit of error boundaries?
+SSR and its benefits in React applications
+different ways to style a React component?
+Use cases of useEffect() in different scenarios
+differences between functional & class components:
+differences b/w useMemo( and useCallback() in React
+differences b/w controlled & uncontrolled components
+How to re-render the view when the browser is resized?
+asynchronous operations with async/await and Promises?
+How to pass data b/w sibling components using React router

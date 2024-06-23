@@ -1,0 +1,159 @@
+What is TypeScript?
+
+TypeScript is a superset of JavaScript that adds static types to the language.
+How do you install TypeScript globally?
+
+You can install TypeScript globally using npm: npm install -g typescript.
+What file extension is used for TypeScript files?
+
+TypeScript files typically use the .ts extension.
+What is a "type annotation" in TypeScript?
+
+A type annotation is a way to explicitly specify the type of a variable, function parameter, or return value in TypeScript.
+What is a "type inference" in TypeScript?
+
+TypeScript's type inference is the ability of the TypeScript compiler to automatically determine the type of a variable or expression based on its usage 
+How do you declare a variable with a specific type in TypeScript?
+
+You can declare a variable with a specific type using a type annotation. For example: let x: number = 5;.
+What is the "any" type in TypeScript?
+
+The any type in TypeScript represents a dynamic type that can hold any value.
+How do you declare an array type in TypeScript?
+
+You can declare an array type using the syntax type[] or Array<type>. For example: let numbers: number[] = [1, 2, 3]; or let numbers: Array<number> = [1, 2, 3];.
+What is the "tuple" type in TypeScript?
+
+A tuple in TypeScript is an array with a fixed number of elements, where each element may have a different type.
+How do you define a tuple type in TypeScript?
+
+You can define a tuple type using square brackets and specifying the types of each element. For example: let person: [string, number] = ['John', 30];.
+What is a "union type" in TypeScript?
+
+A union type in TypeScript allows a variable to have one of several types.
+How do you define a union type in TypeScript?
+
+You can define a union type using the | operator between the types. For example: let id: string | number = 'abc';.
+What is an "intersection type" in TypeScript?
+
+An intersection type in TypeScript combines multiple types into one.
+How do you define an intersection type in TypeScript?
+
+You can define an intersection type using the & operator between the types. For example: type A = { foo: number }; type B = { bar: string }; type C = A & B;.
+What is a "type guard" in TypeScript?
+
+A type guard is a way to narrow down the type of a variable within a conditional block.
+What is TypeScript?
+
+TypeScript is a statically typed superset of JavaScript that adds optional static typing and other features to the language.
+How do you install TypeScript globally on your machine?
+
+You can install TypeScript globally using npm by running npm install -g typescript.
+What file extension is used for TypeScript files?
+
+TypeScript files use the .ts extension.
+What is the purpose of TypeScript declaration files?
+
+Declaration files (.d.ts) describe the shape of external libraries in TypeScript. They provide type information for libraries written in JavaScript.
+How do you compile TypeScript files to JavaScript?
+
+You can compile TypeScript files to JavaScript using the tsc command followed by the name of the TypeScript file, e.g., tsc filename.ts.
+What is the TypeScript compiler?
+
+An enum is a special "class" that represents a group of constants (unchangeable variables).
+
+Type Aliases allow defining types with a custom name (an Alias).
+
+interface is only inpliment to objects
+
+The TypeScript compiler (tsc) is a command-line tool that converts TypeScript code into JavaScript code.
+What is a TypeScript interface?
+
+An interface in TypeScript is a way to define the shape of an object. It specifies the properties and methods that an object must have.
+How do you define an interface in TypeScript?
+
+Interfaces are defined using the interface keyword followed by the interface name and the list of properties and methods it should contain.
+What is a TypeScript class?
+
+A class in TypeScript is a blueprint for creating objects with properties and methods.
+How do you define a class in TypeScript?
+
+Classes are defined using the class keyword followed by the class name and the body of the class containing properties and methods.
+What is the difference between interface and type in TypeScript?
+
+Interfaces are used to define the shape of an object, while types are used to create aliases for existing types, including primitives, unions, and intersections.
+How do you define a type alias in TypeScript?
+
+Type aliases are defined using the type keyword followed by the alias name and the type it represents.
+What are generics in TypeScript?
+
+Generics in TypeScript allow you to create reusable components that can work with a variety of data types.
+How do you define a generic type in TypeScript?
+
+Generic types are defined using angle brackets (<>) followed by a type parameter, which can be used within the type definition.
+Generics in TypeScript provide a way to create reusable components that work with various types. They allow you to define functions, classes, and interfaces that can work with any data type, while still providing type safety. Generics enable you to write flexible and type-safe code by parameterizing types.
+
+
+What is the readonly modifier in TypeScript?
+
+The readonly modifier in TypeScript indicates that a property or array cannot be modified after it's initialized.
+How do you declare a readonly property in TypeScript?
+
+Readonly properties can be declared using the readonly keyword followed by the property name.
+What is a TypeScript namespace?
+
+A namespace in TypeScript is used to organize code into logical groups and prevent naming collisions.
+How do you define a namespace in TypeScript?
+
+Namespaces are defined using the namespace keyword followed by the namespace name and the code within the namespace.
+What is a module in TypeScript?
+
+A module in TypeScript is a way to organize code into reusable units. Modules can contain classes, functions, variables, and other code.
+How do you export a module in TypeScript?
+
+You can export code from a module using the export keyword before the declaration of the code you want to export.
+How do you import a module in TypeScript?
+
+You can import code from a module using the import keyword followed by the path to the module and the name of the code you want to import.
+What is a TypeScript decorator?
+
+A decorator in TypeScript is a special kind of declaration that can be attached to a class declaration, method, accessor, property, or parameter.
+decorator in ts
+ChatGPT
+In TypeScript, decorators are a special kind of declaration that can be attached to a class, method, accessor, property, or parameter. Decorators provide a way to add metadata, modify behavior, or extend functionalities in a declarative manner. 
+How do you define a decorator in TypeScript?
+
+Decorators are defined using the @ symbol followed by the decorator function or expression.
+A class decorator is a function that takes a class constructor as an argument and returns a new constructor or modifies the existing one.
+
+An accessor decorator is similar to a method decorator but is applied to getters and setters. It receives the same arguments and is used to modify or extend the accessor's behavior.
+
+A method decorator is a function that takes three arguments: the target object, the method name, and the property descriptor. It is used to modify or extend the method behavior.
+
+A property decorator is a function that takes two arguments: the target object and the property name. It is used to add metadata or modify the property behavior.
+A parameter decorator is a function that takes three arguments: the target object, the method name, and the parameter index. It is used to add metadata to the parameters of a method.
+
+An enum is a special "class" that represents a group of constants (unchangeable variables).
+
+
+What is the purpose of the strict flag in TypeScript?
+
+Potential Issues: Use console.warn() to notify about potential issues or unusual conditions in your code.
+Debugging: It's helpful for debugging purposes, especially for non-critical issues that don't necessarily halt the execution of your program.
+Warnings: Use it to display warnings or reminders to developers about best practices or deprecated features.
+The strict flag in TypeScript enables strict type-checking options that help catch common errors and enforce stricter coding practices.
+
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data in the form of fields (often known as attributes or properties) and code in the form of procedures (often known as methods). The main principles of OOP include:
+
+Inheritance: Inheritance allows a new class to inherit the properties and methods of an existing class. The new class, known as the derived or child class, can extend or modify the behavior of the base or parent class. This promotes code reusability and hierarchical classification.
+
+Encapsulation: This principle restricts direct access to some of an object's components, which means that the internal representation of an object is hidden from the outside. This is typically achieved through access modifiers like private, protected, and public. Encapsulation helps to protect the state of an object and ensures that data can only be modified in a controlled way.
+
+Abstraction: Abstraction involves hiding complex implementation details and showing only the essential features of the object. This simplifies the interaction with the object and allows the programmer to focus on the high-level functionality.
+
+Polymorphism: Polymorphism enables objects of different classes to be treated as objects of a common super class. It is typically achieved through method overriding (runtime polymorphism) and method overloading (compile-time polymorphism). This allows for flexibility and the ability to define one interface and have multiple implementations.
+
+
+
+
+

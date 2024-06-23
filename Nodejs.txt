@@ -1,0 +1,37 @@
+console.log(
+  new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(
+    number,
+  )
+);
+30 Interview questions:
+Node.js 30 interview Questions
+1. What is Node.js?
+2. Explain the event-driven architecture of Node.js.
+3. How does Node.js handle concurrency?
+4. What is NPM?
+5. What is the package.json file?
+6. How can you handle errors in Node.js?
+7. What is the role of the global objects in Node.js?
+8. How does require() function work in Node.js?
+9. What is the difference between process.nextTick() and setImmediate()?
+10. Explain the role of buffers in Node.js.
+11. What is the purpose of the EventEmitter class in Node.js?
+12. How can you create a simple HTTP server in Node.js?
+13. Explain the difference between readFile() and readFileSync() functions.
+14. What is middleware in Express.js?
+15. How do you handle file uploads in Node.js?
+16. Explain the concept of streams in Node.js.
+17. What is clustering in Node.js?
+18. How do you debug Node.js applications?
+19. What are the core modules in Node.js?
+20. How can you prevent callback hell in Node.js?
+21. What is the purpose of the util module in Node.js?
+22. How can you handle file system operations in Node.js?
+23. What is REPL in Node.js?
+24. How do you implement authentication in a Node.js application?
+25. Explain the concept of RESTful APIs and how to create them in Node.js.
+26. What is the purpose of the fs module in Node.js?
+27. How do you perform unit testing in Node.js?
+28. What is the purpose of the crypto module in Node.js?
+29. How can you interact with databases in Node.js?
+30. Explain the difference between setInterval() and setTimeout() in Node.js.

@@ -1,0 +1,179 @@
+History of HTML
+1991- Tim Berners-Lee invents HTML 1.0
+1993- HTML 1.0 is released. Not many developers are creating websites at this time.
+1995- HTML 2.0 is published. This contains the features of HTML 1.0 plus new features. This remained the standard markup language for designing and creating websites until 1997.
+1997- HTML 3.0 was invented. Here, Dave Raggett introduced a fresh draft on HTML, which improved new features of HTML and gave more powerful characteristics for webmasters in designing websites. Unfortunately, the powerful features slowed down the browser in applying further improvements.
+1999- The widely-used HTML 4.0 comes out. It is very successful.
+2014- HTML 5.0 is released and used worldwide. It is said to be the extended version of HTML 4.01 which was published in 2012.
+HyperText Markup Language
+HTML
+Since its creation, the HyperText Markup Language has been responsible for instructing Browsers how to render content on Web Pages providing its structure. To make it possible, HTML uses an element tag syntax: the text content is written inside angle brackets to be categorized. 
+
+features of HTML 5
+HTML5 has been introduced to support complex web applications with advanced multimedia element support. It offers a lot more new tags and support elements such as form and semantic features along with many others
+
+ <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Semantic Elements
+Audio and Video Support
+Canvas Elements
+Geolocation API
+Local Storage
+New form controls such as calender,date,url,search
+Responsive Images
+Web Workers
+Drag and Drop API
+Form Enhancements
+Web Sockets
+Micro Data
+Cross Document Messaging
+
+Certainly, here are 20 HTML interview questions along with their answers:
+
+1. What does HTML stand for?
+
+HTML stands for Hypertext Markup Language.
+2. Explain the difference between HTML and XHTML.
+
+HTML is more forgiving and allows sloppy coding, while XHTML is stricter and requires well-formed syntax, including properly nested elements and lowercase tag names.
+3. What are the different types of heading elements in HTML?
+
+There are six heading elements in HTML: <h1> to <h6>, where <h1> represents the highest level of heading and <h6> represents the lowest.
+4. How do you create a hyperlink in HTML?
+
+Hyperlinks are created using the <a> (anchor) element with the href attribute specifying the URL of the link.
+5. What is the purpose of the <img> tag in HTML?
+
+The <img> tag is used to embed images into an HTML document. It requires the src attribute to specify the image file's URL.
+6. How do you create a list in HTML?
+
+Lists can be created using the <ul> (unordered list) element for bulleted lists, the <ol> (ordered list) element for numbered lists, and the <li> (list item) element for each list item.
+7. What is the purpose of the <table> element in HTML?
+
+The <table> element is used to create tables in HTML, with rows represented by <tr> (table row) elements and cells represented by <td> (table data) elements.
+8. How do you add comments in HTML?
+
+Comments in HTML are added using the <!-- --> syntax. Anything within these tags is treated as a comment and is not displayed in the browser.
+9. What is the purpose of the <form> element in HTML?
+
+The <form> element is used to create an HTML form, allowing users to input data that can be submitted to a server for processing.
+10. How do you create a text input field in HTML?
+- Text input fields are created using the <input> element with the type="text" attribute.
+
+11. What is the role of the <div> and <span> elements in HTML?
+- <div> and <span> are generic container elements used for grouping and styling content. <div> is a block-level container, while <span> is an inline container.
+
+12. How do you add a background color to an HTML element?
+- Background color can be added to an HTML element using the background-color property in CSS or the bgcolor attribute in HTML (though the latter is considered outdated).
+
+13. What is semantic HTML?
+- Semantic HTML refers to using HTML elements that carry meaning, conveying the structure of the content rather than just its appearance. Examples include <header>, <footer>, <nav>, and <article>.
+
+14. What is the purpose of the <audio> and <video> elements in HTML5?
+- The <audio> and <video> elements are used to embed audio and video content, respectively, directly into HTML documents without requiring third-party plugins like Flash.
+
+15. How do you create a drop-down list in HTML?
+- Drop-down lists, or select menus, are created using the <select> element with nested <option> elements representing each selectable item.
+
+16. What is the purpose of the <meta> tag in HTML?
+- The <meta> tag is used to provide metadata about the HTML document, such as character set, author, description, keywords, and viewport settings.
+
+17. How do you link an external CSS file to an HTML document?
+- External CSS files are linked to HTML documents using the <link> element within the <head> section, with the href attribute specifying the path to the CSS file.
+
+18. What is the role of the <header>, <footer>, <nav>, and <section> elements in HTML5?
+- These elements are part of HTML5's semantic markup, used to define the structure and meaning of content. <header> represents introductory content or a group of navigational links. <footer> represents the footer of a document or section. <nav> represents a section of navigation links. <section> represents a generic section of content.
+
+19. How do you embed a YouTube video in an HTML document?
+- YouTube videos can be embedded using an <iframe> element with the src attribute set to the video's URL.
+
+20. What is the purpose of the <canvas> element in HTML5?
+- The <canvas> element is used to draw graphics, animations, or interactive content using JavaScript within the HTML document. It provides a raster-based drawing surface.
+
+HTML tags
+<!DOCTYPE>: Declaration defining the document type and version.
+
+<html>: Root element of an HTML document.
+
+<head>: Container for metadata and other head elements.
+
+<title>: Defines the title of the document, displayed in the browser's title bar or tab.
+
+<meta>: Provides metadata about the HTML document, such as character encoding, viewport settings, and authorship information.
+
+<link>: Establishes relationships between the current document and external resources such as stylesheets.
+
+<style>: Contains CSS rules for styling the document.
+
+<script>: Defines client-side JavaScript code or links to external script files.
+
+<body>: Contains the main content of the HTML document.
+
+<header>: Represents introductory content or a group of navigational links at the top of a section or page.
+
+<nav>: Defines a section of navigation links.
+
+<main>: Contains the main content of the document. It should not include navigation links or other tangential content.
+
+<article>: Represents an independent piece of content that can be reused or distributed separately from the rest of the page.
+
+<section>: Represents a thematic grouping of content within a document.
+
+<aside>: Defines content that is tangentially related to the content around it, such as sidebars or pull quotes.
+
+<footer>: Contains footer information such as copyright notices, contact information, or links to related documents.
+
+<h1> to <h6>: Heading elements for defining different levels of section headings.
+
+<p>: Represents a paragraph of text.
+
+<a>: Defines hyperlinks, linking to another document or resource.
+
+<img>: Embeds an image into the document.
+
+<ul>: Represents an unordered list of items.
+
+<ol>: Represents an ordered list of items.
+
+<li>: Defines a list item within an ordered or unordered list.
+
+<div>: General-purpose container for grouping content and applying CSS styles.
+
+<span>: Inline container typically used for applying CSS styles or scripting functionality to a small piece of content.
+Semantic Elements:
+Semantic elements in HTML5 are tags that convey meaning to both the browser and the developer. Examples include <header>, <footer>, <nav>, <article>, <section>, and <aside>. These elements help in structuring the web page and improve accessibility and SEO.
+Audio and Video Support:
+HTML5 introduced native support for embedding audio and video content directly into web pages without the need for third-party plugins like Flash. This is achieved through the <audio> and <video> elements, allowing developers to add multimedia content seamlessly.
+Canvas Elements:
+The <canvas> element in HTML5 provides a space for rendering graphics, animations, and interactive content dynamically using JavaScript. Developers can draw shapes, lines, text, and images on the canvas, making it versatile for creating games, data visualizations, and more.
+Geolocation API:
+The Geolocation API allows web applications to access the user's geographical location information. It provides JavaScript methods to retrieve the latitude and longitude coordinates of the user's device, enabling location-aware functionality in web applications.
+Local Storage:
+HTML5 introduced the localStorage and sessionStorage APIs, allowing web applications to store data locally on the user's browser. This data persists even after the browser is closed and can be accessed and manipulated using JavaScript, providing a convenient way to store user preferences, cache data, and more.
+Responsive Images:
+Responsive images adapt to different screen sizes and resolutions, ensuring optimal display across various devices. HTML5 introduced new attributes like srcset and sizes for specifying multiple image sources and their sizes, allowing browsers to choose the most suitable image for the user's device.
+Web Workers:
+Web Workers enable concurrent execution of JavaScript code in the background, separate from the main execution thread of the web page. This allows for multitasking and improves performance by offloading resource-intensive tasks to separate threads, enhancing the responsiveness of web applications.
+Drag and Drop API:
+The Drag and Drop API in HTML5 allows users to drag elements from one location to another within a web page or between different applications. It provides JavaScript events and methods for handling drag-and-drop interactions, making it easier to implement intuitive user interfaces and drag-and-drop functionality in web applications.
+
+
+Static Pages:
+
+Static web pages are pre-built and served to the user exactly as they were created.
+These pages are fixed and do not change content or layout in response to user actions.
+Content on static pages remains the same until manually updated by a developer.
+Common examples include informational websites, landing pages, and online brochures.
+Static pages are simple, easy to host, and require minimal server-side processing.
+Dynamic Pages:
+
+Dynamic web pages are generated on-the-fly in response to user requests.
+Content and layout of dynamic pages can change based on user input, database queries, or other external factors.
+Dynamic pages are often used for interactive websites, e-commerce platforms, social networks, and web applications.
+Content is typically retrieved from a database, processed by server-side scripts, and then sent to the user's browser.
+Dynamic pages provide personalized experiences, real-time updates, and enhanced functionality compared to static pages.
+

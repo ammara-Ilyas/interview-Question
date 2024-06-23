@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <ul type="square">
+      <li>Itm 1</li>
+      <li>item 2</li>
+    </ul>
+    <!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap" />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="computer.htm"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="phone.htm"
+      />
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" />
+    </map> -->
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+    <marquee direction="left"
+      >This text will scroll from right to left.</marquee
+    >
+
+    <iframe
+      src="data:image/jpeg;base64,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"
+      title="Iframe Example"
+      height="400"
+      width="400"
+    ></iframe>
+    <p>&#128514;</p>
+    <h1>&#128514;</h1>
+
+    <!-- <em>Hello</em>
+    <i>Hello</i>
+    <strong>Hello</strong>
+    <b>Hello</b>
+    <small>Heloo</small>
+    <del>Hello</del>
+    <del>World</del>
+    <p>Hello <sub>World</sub> we are <sup>World</sup></p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 60 years, WWF has worked to help people and nature thrive. As the
+      world's leading conservation organization, WWF works in nearly 100
+      countries. At every level, we collaborate with people around the world to
+      develop and deliver innovative solutions that protect communities,
+      wildlife, and the places in which they live.
+    </blockquote>
+    <p>
+      The <abbr title="World Health Organization">WHO</abbr> was founded in
+      1948.
+    </p>
+    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+    <address>
+      Written by John Doe.<br />
+      Visit us at:<br />
+      Example.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <bdo dir="b">This text will be written from right to left</bdo> -->
+
+    <!-- tags -->
+    <!-- <!DOCTYPE >: Declaration defining the document type and version. -->
+    <!-- 
+<html>: Root element of an HTML document.
+
+<head>: Container for metadata and other head elements.
+
+<title>: Defines the title of the document, displayed in the browser's title bar or tab.
+
+<meta>: Provides metadata about the HTML document, such as character encoding, viewport settings, and authorship information.
+
+<link>: Establishes relationships between the current document and external resources such as stylesheets.
+
+<style>: Contains CSS rules for styling the document.
+
+<script>: Defines client-side JavaScript code or links to external script files.
+
+<body>: Contains the main content of the HTML document.
+
+<header>: Represents introductory content or a group of navigational links at the top of a section or page.
+
+<nav>: Defines a section of navigation links.
+
+<main>: Contains the main content of the document. It should not include navigation links or other tangential content.
+
+<article>: Represents an independent piece of content that can be reused or distributed separately from the rest of the page.
+
+<section>: Represents a thematic grouping of content within a document.
+
+<aside>: Defines content that is tangentially related to the content around it, such as sidebars or pull quotes.
+
+<footer>: Contains footer information such as copyright notices, contact information, or links to related documents.
+
+<h1> to <h6>: Heading elements for defining different levels of section headings.
+
+<p>: Represents a paragraph of text.
+
+<a>: Defines hyperlinks, linking to another document or resource.
+
+<img>: Embeds an image into the document.
+
+<ul>: Represents an unordered list of items.
+
+<ol>: Represents an ordered list of items.
+
+<li>: Defines a list item within an ordered or unordered list.
+
+<div>: General-purpose container for grouping content and applying CSS styles.
+
+<span>: Inline container typically used for applying CSS styles or scripting functionality to a small piece of content. -->
+    <!-- <script src="index.js"></script> -->
+    <script>
+      let arr = [22, 25, 58, 85, 95];
+      // const res = Math.max(...arr);
+      // const res = arr.includes(58);
+      // const res = arr.indexOf(58);
+      // const res = arr.(58);
+      // console.log("res", res);
+      let arr1 = [22, 25, 58, 85, 95];
+
+      // console.log("Max value:", maxValue);
+      ////////////second larget numer
+      let secArr = [58, 45, 65, 25, 75, 65, 25, 85, 58];
+      // let firNum = -Infinity,
+      //   secNum = -Infinity;
+      // for (const num of secArr) {
+      //   if (num > firNum) {
+      //     secNum = firNum;
+      //     firNum = num;
+      //   }
+      // else if (num > secNum && num < firNum) {
+      //   secNum = num;
+      // }
+      // }
+      // console.log("secnum", secNum);
+      // console.log("first", firNum);
+      // let arr4 = [...arr, ...arr1, ...secArr];
+      // let remDup = [...new Set([...arr, ...arr1, ...secArr])];
+      // // let remDup = [...new Set([...arr, ...arr1, ...secArr])];
+      // console.log("remove Duplicate", remDup);
+      // let intersection = secArr.filter((ele) => arr1.includes(ele));
+      // console.log("intersection", intersection);
+      // let postiveNum = [22, 25, -58, 85, -95];
+      // let allPositive = postiveNum.filter((num) => num > 0);
+
+      // console.log("All elements are positive:", allPositive);
+
+      // const str = "12. Check if All Elements in an Array are Unique";
+
+      // const strArr = str.split(" ");
+      // console.log(strArr);
+      // longWord = Infinity;
+      // const longestWord = strArr.reduce((longeword, curword) => {
+      //   return longeword.length < curword.length ? longeword : curword;
+      // }, Infinity);
+      // console.log("Longest word", longestWord);
+      ////////////////////////////////////////////////////////////////////
+      // let user1 = "Anurag";
+      // let user2 = user1;
+      // user2 = user1 + "sigh";
+      // console.log(user1);
+      // console.log(user2);
+      // // copy by value
+
+      // let obj1 = {
+      //   name: "anurag",
+      //   age: 25,
+      // };
+      // let obj2 = obj1;
+      // obj2.name = "Singh";
+      // console.log("obj1", obj1); /////Singh 25
+      // console.log("obj2", obj2); //////Singh 25
+      // //////solving this problem by shallow copy
+      // let obj3 = {
+      //   name: "anurag",
+      //   age: 25,
+      // };
+      // // let obj4=Object.assign(obj3)
+      let obj4 = { ...obj3 };
+      // obj2.name = "Singh";
+      // console.log("obj3", obj3); ////Anurag 25
+      // console.log("obj4", obj4); //////Singh 25
+      // //////////////by deep  copy
+      // let obj5 = {
+      //   name: "anurag",
+      //   age: 25,
+      //   address:{
+      //     city:"Multan",
+      //     country:"Pakistan"
+      //   }
+      // };
+      let obj6 =JSON.parse(JSON.stringify(obj5));
+      // obj6.address.city = "Khanewal";
+      // obj6.address.country = "USA";
+      // console.log("obj5", obj5); ////Anurag 25
+      // console.log("obj6", obj6); //////Singh 25
+      // console.log(typeof (obj2));
+      // console.log(typeof (arr));
+      ////////////////
+//      const objkey1={
+//       a:2,b:3,c:4,d:5,t:7
+//      }
+//      const objkey2={
+//       a:12,b:13,c:4,d:15,f:7
+//      }
+    
+     
+//       const uniKeyVal= (objkey1,objkey2)=> {
+//         let obj={}
+//      for (const i in objkey1) {
+//       console.log(objkey1[i]);
+// console.log("ob2",objkey2[i]);
+//      if(objkey1[i]===objkey2[i]){
+//          obj[i]=objkey1[i]
+//      }
+//     }
+//     return obj
+//       }
+//        console.log("unikey",uniKeyVal(objkey1,objkey2));
+///////////////2nd largest
+// const lArr=[1,2,2,1,5,4,3,7,5,4,7]
+//        let first=Infinity
+//        let sec=Infinity
+//        for (const num of lArr) {
+//          if(num < first){
+//           sec=first
+//           first=num
+//          }else if(num < sec && num >first){
+//           sec=num
+//          }
+        
+//        }
+//        console.log("fir",first);
+//        console.log("sec",sec);
+// let city1=[]
+
+const debouncing = (func, delay) => {
+  return function (...args) {
+    let timer;
+    if (timer) {
+      return clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+};
+const onScroll = () => {
+  console.log("scroll ");
+};
+console.log("debouncing");
+const scrollingEvent = debouncing(onScroll, 1000);
+window.addEventListener("scroll", scrollingEvent);
+// console.log(scrollingEvent);
+////////////throttle
+function throttle(func, delay) {
+  let lastCall = 0;
+  return function (...args) {
+    const now = new Date().getTime();
+    if (now - lastCall >= delay) {
+      lastCall = now;
+      func.apply(this, args);
+    }
+  };
+}
+function onResize() {
+  console.log("Window resized");
+}
+console.log("throttle");
+const throttledResize = throttle(onResize, 3000);
+
+window.addEventListener("resize", throttledResize);
+
+    </script>
+    </script>
+  </body>
+</html>

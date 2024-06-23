@@ -1,0 +1,5 @@
+first lazy loading
+use memo
+use effect
+function ko outside declare kry or just useffect me call kry
+or clean up the event listener ta'k globaly koi event show na ho 

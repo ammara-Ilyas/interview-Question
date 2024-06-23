@@ -1,0 +1,292 @@
+Answer: In JavaScript, both == and === are comparison operators, but they behave differently.
+microtsk and event loop in j
+
+== (loose equality operator) checks for equality after performing type coercion.
+
+=== (strict equality operator) checks for equality without type coercion. 
+
+JavaScript, created by Brendan Eich in 1995
+
+event
+event bubbling
+Event bubbling is a concept in JavaScript where an event starts from the deepest target element and then bubbles up to the root of the DOM tree, calling event handlers at each level of the hierarchy(ˈhī(ə)ˌrärkē). It allows for events to be handled not only by the element on which they occur but also by its ancestors.
+event.stopProgogation top event bubbling
+to stop by default behior e.preventDefault()
+event capturing
+The event starts from the root and travels down to the target element. This phase is less commonly used.
+What is event delegation in JavaScript?
+Event delegation is a technique where a single event listener is attached to a parent element to handle events on its child elements, reducing the number of event listeners needed.
+
+
+heap memory non primitive store and by reference
+stack memeory
+What is JavaScript?
+JavaScript is a high-level, interpreted programming language used primarily for creating and enhancing interactive web pages. It is a key technology of the World Wide Web, alongside HTML and CSS.
+
+Debouncing
+Debouncing in JavaScript is a technique used to limit the rate at which a function is executed. It's particularly useful when dealing with events that may fire multiple times in rapid succession, such as keystrokes, window resizing, or scrolling. The idea is to ensure that a function is called only once within a specified time period after the last event.
+
+Throttling in JavaScript is a technique used to control the rate at which a function is executed. Unlike debouncing, which ensures a function is called only once after a series of events, throttling ensures that a function is called at most once per specified time interval, no matter how many times the event occurs.
+
+
+
+
+
+In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
+
+
+What are the differences between var, let, and const?
+
+var: Function-scoped or globally-scoped variable declaration.   and redecalare and re intialize
+let: Block-scoped variable declaration.not redecalare but re intialize
+const: Block-scoped variable declaration that cannot be reassigned. not redecalare and re intialize
+
+Explain the concept of hoisting in JavaScript.
+Hoisting is JavaScript's default behavior of moving declarations of function and vaiables to the top of the current scope before execution. 
+Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code:
+
+What is an IIFE (Immediately Invoked Function Expression)?
+An IIFE is a function that runs as soon as it is defined. It is defined and immediately invoked to create a local scope, avoiding polluting the global scope.
+
+JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time.
+
+Explain event delegation in JavaScript.
+Event delegation is a technique where a single event listener is attached to a parent element to handle events on its child elements, reducing the number of event listeners needed.
+
+What are Promises in JavaScript?
+Promises are objects that represent the eventual completion or failure of an asynchronous operation. They provide methods like then, catch, and finally to handle the asynchronous result.
+
+Rest operaor
+This operator is used to collect multiple elements or arguments into a single array or object.
+spread operator
+: The spread operator, on the other hand, is used to expand elements of an array or properties of an object.
+
+Deep copy
+A deep copy, however, creates a completely new object or array with its own copies of all nested objects or arrays. 
+Shallow copy
+A shallow copy creates a new object or array and copies the top-level structure of the original object or array
+
+What is the difference between null and undefined?
+
+null: An intentional absence of any object value.
+undefined: A variable that has been declared but not yet assigned a value.
+
+What is the this keyword in JavaScript?
+The “this” keyword refers to the object in which function s called.
+
+What are template literals in JavaScript?
+Template literals are string literals that allow embedded expressions. They use backticks (`) instead of quotes
+
+What are modules in JavaScript?
+Modules are reusable pieces of code that can be imported and exported between files. 
+
+
+What is the event loop in JavaScript?
+The event loop is a mechanism that handles asynchronous callbacks in JavaScript. It continuously checks the call stack and the task queue, executing tasks from the queue when the stack is empty.
+
+
+typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'John', age:34}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myCar                  // Returns "undefined" *
+typeof null                   // Returns "object"
+
+What is the fetch API?
+The fetch API is a modern interface for making HTTP requests in JavaScript.
+
+advantages of javascript
+Javascript is executed on the client-side as well as server-side also
+Javascript is a simple language to learn.
+Web pages now have more functionality because of Javascript.
+
+22. What are object prototypes?
+All javascript objects inherit properties from a prototype. For example,
+
+Date objects inherit properties from the Date prototype
+Math objects inherit properties from the Math prototype
+Array objects inherit properties from the Array prototype.
+On top of the chain is Object.prototype. Every prototype inherits properties and methods from the Object.prototype.
+A prototype is a blueprint of an object. The prototype allows us to use properties and methods on an object even if the properties and methods do not exist on the current object.
+
+constructor
+
+If we want to create multiple objects having similar properties and methods, constructor functions are used.
+
+
+What do you mean by BOM?
+Browser Object Model is known as BOM. It allows users to interact with the browser. A browser's initial object is a window. As a result, you may call all of the window's functions directly or by referencing the window. The document, history, screen, navigator, location, and other attributes are available in the window object.
+
+What is the purpose of the Symbol type?
+Symbol is a primitive data type introduced in ES6. It is used to create unique identifiers for object properties,
+
+The debugger  in JavaScript is a built-in tool used by developer for finding error and  for debugging code.
+Note - ‘ + ‘ operator when used to add two numbers, outputs a number. The same ‘ + ‘ operator when used to add two strings, outputs the concatenated string:
+Note - Type coercion also takes place when using the ‘ - ‘ operator, but the difference while using ‘ - ‘ operator is that, a string is converted to a number and then subtraction takes place.
+All values except false, 0, 0n, -0, “”, null, undefined, and NaN are truthy values.
+
+isNaN("Hello")  // Returns true
+isNaN(345)   // Returns false
+isNaN('1')  // Returns false, since '1' is converted to Number type which results in 0 ( a number) 
+isNaN(true) // Returns false, since true converted to Number type results in 1 ( a number)
+isNaN(false) // Returns false
+isNaN(undefined) // Returns true
+let num = Number(str); // Converts "123" to 123
+let str = String(num); // Converts 123 to "123"
+let str = String(bool); // Converts true to "true"
+
+Explicit Type Conversion
+Explicit type conversion (or type casting) happens when you manually convert a value from one type to another. This is done using functions or operators.
+
+Implicit type conversion (or type coercion) happens automatically when JavaScript needs to perform an operation that involves different data types. The language automatically converts one type to another.
+
+
+
+Higher-order functions are a fundamental concept in JavaScript and functional programming. They are functions that can do at least one of the following:
+
+Take one or more functions as arguments.
+Return a function as a result
+
+hat is the purpose of the bind() method in JavaScript?
+The bind() method is used to create a new function with a specified this value and optional arguments, without invoking the function.it store copy and call this copy
+What is the purpose of the apply() and call() methods in JavaScript?
+
+Both apply() and call() are used to invoke a function with a specified this value and arguments. The difference is in how arguments are passed: apply() accepts arguments as an array, while call() accepts arguments individually.
+
+What is JavaScript?
+JavaScript is a high-level, interpreted programming language that is widely used to create dynamic and interactive webs
+What are modules in JavaScript?
+Modules are reusable pieces of code that can be imported and exported between files. 
+
+
+Currying is a functional programming technique that involves transforming a function with multiple arguments into a sequence of functions, each taking a single argument.
+
+A closure is created when a function is defined inside another function, and the inner function has access to the variables of the outer function, even after the outer function has returned. This happens because functions in JavaScript form a closure over the environment in which they were declared.
+
+ites.
+What are the data types supported by JavaScript?
+JavaScript supports six primitive data types: number, string, boolean, null, undefined, and symbol (added in ES6). Additionally, there is the object data type, which includes arrays, functions, and objects.
+What is the difference between null and undefined?
+null represents an intentional absence of any object value, while undefined represents a variable that has been declared but not assigned a value.
+Explain the concept of hoisting in JavaScript.
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase.
+What is event bubbling in JavaScript?
+Event bubbling is the propagation of an event from the target element all the way up through its ancestors in the DOM tree.
+
+What are closures in JavaScript?
+A closure is a function that retains access to variables from its containing lexical scope even after the outer function has finished executing.
+
+Explain the concept of object-oriented programming in JavaScript.
+Object-oriented programming in JavaScript involves creating objects with properties and methods to represent real-world entities, encapsulating data and behavior within those objects.
+
+
+How do you handle errors in JavaScript?
+Errors in JavaScript can be handled using try, catch, and finally blocks, allowing you to gracefully handle exceptions and continue execution.
+
+What are arrow functions in JavaScript?
+Arrow functions are a concise way to write anonymous functions in JavaScript, introduced in ES6, with a more compact syntax and lexical this binding.
+
+What is event delegation in JavaScript?
+Event delegation is a technique where a single event listener is attached to a parent element to handle events on its child elements, reducing the number of event listeners needed.
+
+What is the purpose of the typeof operator in JavaScript?
+The typeof operator is used to determine the data type of a variable or expression in JavaScript.
+How do you convert a string to a number in JavaScript?
+You can convert a string to a number in JavaScript using the parseInt() or parseFloat() functions.
+What is the difference between let and const in JavaScript?
+let allows for variable reassignment, while const creates a constant whose value cannot be changed once assigned.
+How do you loop through an array in JavaScript?
+You can loop through an array in JavaScript using for loops, forEach() method, for...of loop, or map() method.
+Explain the concept of event-driven programming in JavaScript.
+Event-driven programming in JavaScript involves writing code that responds to events triggered by user actions or system events.
+
+What is the purpose of the bind() method in JavaScript?
+The bind() method is used to create a new function with a specified this value and optional arguments, without invoking the function.
+What is the purpose of the apply() and call() methods in JavaScript?
+
+Both apply() and call() are used to invoke a function with a specified this value and arguments. The difference is in how arguments are passed: apply() accepts arguments as an array, while call() accepts arguments individually.
+
+How do you check if an object has a property in JavaScript?
+You can check if an object has a property using the hasOwnProperty() method or by using the in operator.
+What is the purpose of the Object.keys() method in JavaScript?
+The Object.keys() method is used to return an array of a given object's own enumerable property names.
+How do you create a new object in JavaScript?
+You can create a new object using object literals {}, the new keyword with a constructor function, or using Object.create() method.
+What is the purpose of the Object.freeze() method in JavaScript?
+The Object.freeze() method is used to freeze an object, preventing any changes to its properties or methods.
+What are the different ways to define a function in JavaScript?
+Functions in JavaScript can be defined using function declarations, function expressions, arrow functions, and methods within objects.
+Explain the concept of scope in JavaScript.
+Scope refers to the visibility and accessibility of variables in different parts of a JavaScript program. Variables can have global scope, function scope, or block scope.
+What is the purpose of the forEach() method in JavaScript?
+The forEach() method is used to execute a provided function once for each array element.
+What is the purpose of the map() method in JavaScript?
+The map() method is used to create a new array by calling a provided function on every element in the calling array.
+What are template literals in JavaScript?
+Template literals are string literals allowing embedded expressions, introduced in ES6, and delimited by backticks ( ).
+How do you handle asynchronous operations in JavaScript?
+Asynchronous operations in JavaScript can be handled using callbacks, promises, async/await, or using libraries like async.js.
+What is the purpose of the splice() method in JavaScript?
+The splice() method is used to change the contents of an array by removing or replacing existing elements and/or adding new elements.
+What is the purpose of the filter() method in JavaScript?
+The filter() method is used to create a new array with all elements that pass a test implemented by the provided function.
+What is the purpose of the reduce() method in JavaScript?
+The reduce() method is used to apply a function against an accumulator and each element in the array to reduce it to a single value.
+What is the purpose of the find() method in JavaScript?
+The find() method is used to return the value of the first element in the array that satisfies the provided testing function.
+What are the differences between let and var?
+let has block scope and is only accessible within the block it's declared in, while var has function scope and is hoisted to the top of its function.
+What are higher-order functions in JavaScript?
+Higher-order functions are functions that take other functions as arguments or return functions as results.
+What is the purpose of the some() method in JavaScript?
+The some() method is used to test whether at least one element in the array passes the test implemented by the provided function.
+What is the purpose of the every() method in JavaScript?
+The every() method is used to test whether all elements in the array pass the test implemented by the provided function.
+What is the purpose of the flat() method in JavaScript?
+The flat() method is used to create a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+
+What are destructuring assignments in JavaScript?
+Destructuring assignments allow you to extract values from arrays or properties from objects into distinct variables.
+What are rest parameters in JavaScript?
+Rest parameters allow you to represent an indefinite number of arguments as an array in a function declaration.
+What are spread syntax in JavaScript?
+Spread syntax allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.
+What is the purpose of the Object.entries() method in JavaScript?
+The Object.entries() method is used to return an array of a given object's own enumerable string-keyed property [key, value] pairs.
+What is the purpose of the Object.values() method in JavaScript?
+The Object.values() method is used to return an array of a given object's own enumerable property values.
+What is the purpose of the Object.assign() method in JavaScript?
+The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object.
+
+concept
+5 + null    // returns 5         because null is converted to 0
+"5" + null  // returns "5null"   because null is converted to "null"
+"5" + 2     // returns "52"      because 2 is converted to "2"
+"5" - 2     // returns 3         because "5" is converted to 5
+"5" * "2"   // returns 10        because "5" and "2" are converted to 5 and 2
+
+The global method String() can convert numbers to strings.
+
+Number()	Returns a number, converted from its argument
+parseFloat()	Parses a string and returns a floating point number
+parseInt()	Parses a string and returns an integer
+
+
+== (loose equality operator) checks for equality after performing type coercion.
+
+=== (strict equality operator) checks for equality without type coercion. 
+
+typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'John', age:34}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myCar                  // Returns "undefined" *
+typeof null                   // Returns "object"
