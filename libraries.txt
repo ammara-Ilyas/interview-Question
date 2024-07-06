@@ -1,0 +1,4 @@
+https://variantvault.chrisabdo.dev/text-variants
+chart.js
+swiper
+slick slider

@@ -1,0 +1,140 @@
+In the app directory of a Next.js project, what defines the route structure?
+
+A. File names
+B. Folder hierarchy
+C. File extensions
+D. File contents
+Answer: B
+When is a route in the app directory publicly accessible?
+
+A. When a folder is created
+B. When a file is added
+C. When a page.js or route.js file is added
+D. When the folder is named correctly
+Answer: C
+In the app directory, which files return content to the client?
+
+A. Any JavaScript file
+B. Only page.js and route.js files
+C. Any file with .js extension
+D. Only index.js
+Answer: B
+How can you create a private folder in the app directory?
+
+A. By prefixing the folder name with #
+B. By adding a .private file inside
+C. By prefixing the folder name with an underscore (_)
+D. By adding a README file
+Answer: C
+What is the purpose of route groups in Next.js?
+
+A. To create public routes
+B. To organize routes without affecting the URL path
+C. To rename routes
+D. To delete routes
+Answer: B
+How can you create URL segments that start with an underscore?
+
+A. By using an underscore directly
+B. By using %5F (URL-encoded form of an underscore)
+C. By using a hyphen
+D. By using a dollar sign
+Answer: B
+What is the benefit of using Module Path Aliases in Next.js?
+
+A. To increase the file size
+B. To simplify and maintain imports
+C. To change file names
+D. To delete files
+Answer: B
+Where are project configuration files mostly stored in a Next.js project?
+
+A. In the app directory
+B. In the src directory
+C. In the root of the project
+D. In the public folder
+Answer: C
+How can you mark files as "private" in Next.js outside of private folders?
+
+A. By using an underscore prefix
+B. By using a dot prefix
+C. By using a hyphen prefix
+D. By using a dollar sign prefix
+Answer: A
+What is a common reason to use private folders in Next.js?
+
+A. To make routes publicly accessible
+B. To keep implementation details separate from routing logic
+C. To increase project size
+D. To decrease project performance
+Answer: B
+In Next.js, which directory can you optionally use to store application code to separate it from project configuration files?
+
+A. public
+B. src
+C. assets
+D. lib
+Answer: B
+What strategy involves storing all application code in shared folders in the root of the project?
+
+A. Split by feature
+B. Store project files outside of app
+C. Store project files in top-level folders inside of app
+D. Organize by team
+Answer: B
+What strategy involves storing globally shared application code in the root app directory and specific code in route segments?
+
+A. Store project files in top-level folders inside of app
+B. Store project files outside of app
+C. Split project files by feature or route
+D. Use a monorepo structure
+Answer: C
+Which file naming convention indicates a folder should be excluded from routing in Next.js?
+
+A. _folderName
+B. .folderName
+C. -folderName
+D. folder_name
+Answer: A
+What is one use of route groups in Next.js?
+
+A. To rename files
+B. To enable nested layouts in the same segment level
+C. To delete files
+D. To increase project size
+Answer: B
+Why might you consider marking files outside of private folders as "private"?
+
+A. To ensure they are routable
+B. To prevent unexpected naming conflicts
+C. To decrease project performance
+D. To increase the number of routes
+Answer: B
+What does prefixing a folder with %5F do in Next.js?
+
+A. It makes the folder routable
+B. It encodes the folder name to start with an underscore
+C. It deletes the folder
+D. It renames the folder
+Answer: B
+Which file is not considered a route in the pages directory?
+
+A. page.js
+B. route.js
+C. README.md
+D. index.js
+Answer: C
+What is the default behavior of file colocation in the app directory?
+
+A. All colocated files are routable
+B. Colocated files are not routable unless specified
+C. Colocated files are always private
+D. Colocated files must be in the src directory
+Answer: B
+What is the primary benefit of using private folders in Next.js?
+
+A. To make files public
+B. To organize internal files and avoid routing conflicts
+C. To increase project size
+D. To ensure files are always routable
+Answer: B

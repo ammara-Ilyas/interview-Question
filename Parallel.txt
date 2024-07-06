@@ -1,0 +1,279 @@
+
+Yes. Routing , rendering , caching ,server components  react , framework  defined infrastructure etc etc
+
+
+
+MCQs from Parallel Routes Article
+
+What do Route Groups allow you to do with specific route segments in Next.js?
+A) Fetch data from an API
+B) Opt them in and out of shared layouts
+C) Handle server-side rendering
+D) Modify the HTML and body tags
+
+Answer: B
+
+What is the primary purpose of Parallel Routes in Next.js?
+
+A) To handle server-side rendering
+B) To simultaneously or conditionally render multiple pages within the same layout
+C) To manage global state
+D) To optimize CSS loading
+Correct Answer: B
+How are Parallel Routes created in Next.js?
+
+A) Using a special configuration file
+B) By defining named slots using the @folder convention
+C) Through environment variables
+D) By using CSS modules
+Correct Answer: B
+What is the function of the children prop in Parallel Routes?
+
+A) It defines global styles for the application
+B) It specifies the main content of the page
+C) It is an implicit slot that does not need to be mapped to a folder
+D) It configures server-side rendering settings
+Correct Answer: C
+What happens during Soft Navigation in Next.js?
+
+A) The entire page reloads
+B) Next.js performs a partial render, changing the subpage within the slot
+C) The server generates a static page
+D) All slots' active subpages are reset
+Correct Answer: B
+What file can you create to provide a fallback for unmatched slots during initial load or full-page reload?
+
+A) error.js
+B) fallback.js
+C) default.js
+D) index.js
+Correct Answer: C
+How do you read the active route segment within a slot using hooks?
+
+A) useActiveRouteSegment
+B) useSlotSegment
+C) useSelectedLayoutSegment
+D) useActiveSlot
+Correct Answer: C
+Which of the following is a benefit of using Parallel Routes for modals?
+
+A) Faster page reloads
+B) Making the modal content shareable through a URL
+C) Automatic SEO optimization
+D) Server-side data fetching
+Correct Answer: B
+How can you close a modal created using Parallel Routes?
+
+A) By calling router.back() or using the Link component
+B) By refreshing the page
+C) By modifying the server-side code
+D) By reloading the client-side scripts
+Correct Answer: A
+What is the role of the catch-all route in the context of Parallel Routes and modals?
+
+A) To handle errors globally
+B) To provide a default loading state
+C) To close the modal by returning null
+D) To manage SEO settings
+Correct Answer: C
+How can you define independent error and loading states for each route in Parallel Routes?
+
+A) By configuring the main layout file
+B) By using independent error and loading components within each slot
+C) By editing the server configuration
+D) By using CSS modules
+Correct Answer: B
+10 more
+ChatGPT
+What is a key advantage of using the @folder convention for Parallel Routes?
+
+A) It simplifies the creation of global styles
+B) It allows defining multiple slots within a single layout
+C) It ensures faster data fetching
+D) It automatically manages state
+Correct Answer: B
+What will the URL be if a route is defined in the @analytics slot and the page is views?
+
+A) /@analytics/views
+B) /analytics/views
+C) /views
+D) /@views/analytics
+Correct Answer: C
+In the context of Parallel Routes, what does the term 'slots' refer to?
+
+A) Named sections within a layout that can render different pages
+B) Specific server-side rendering configurations
+C) Placeholder components for error handling
+D) Predefined CSS classes
+Correct Answer: A
+What does the default.js file do in a Parallel Routes setup?
+
+A) It provides a fallback UI for unmatched slots
+B) It contains global styles for the application
+C) It handles data fetching for the entire app
+D) It manages state transitions
+Correct Answer: A
+What is one purpose of using the useSelectedLayoutSegment hook in a Parallel Routes setup?
+
+A) To manage server-side data fetching
+B) To dynamically read the active route segment within a slot
+C) To configure global error handling
+D) To define global styles
+Correct Answer: B
+How does Next.js determine the active state for slots during Soft Navigation?
+
+A) By performing a full-page reload
+B) By maintaining the other slot's active subpages even if they don't match the current URL
+C) By resetting all slots' active subpages
+D) By re-fetching data from the server
+Correct Answer: B
+What happens if you navigate to a route that doesn't match any defined slot during Hard Navigation?
+
+A) The page will show a 404 error
+B) The server will fetch new data
+C) The client will reload the current page
+D) The app will crash
+Correct Answer: A
+
+Intercepting Routes in Next.js:
+
+What is the purpose of intercepting routes in Next.js?
+
+A) To improve SEO
+B) To load a route from another part of the application within the current layout
+C) To reduce server load
+D) To enhance security
+Correct Answer: B
+Which of the following scenarios is a typical use case for intercepting routes?
+
+A) Displaying a static page
+B) Displaying a photo in a modal overlaying a feed
+C) Implementing server-side rendering
+D) Setting up environment variables
+Correct Answer: B
+What happens when you navigate to a photo by clicking a shareable URL or by refreshing the page in the context of intercepting routes?
+
+A) The modal remains open
+B) The entire photo page renders instead of the modal
+C) The URL is masked and the modal is displayed
+D) The user is redirected to the home page
+Correct Answer: B
+Which convention is used to define intercepting routes in Next.js?
+
+A) @route
+B) [segment]
+C) (..)
+D) /path/
+Correct Answer: C
+How do you match segments two levels above when defining intercepting routes?
+
+A) (.)
+B) (..)
+C) (..)(..)
+D) (...)
+Correct Answer: C
+In the provided example, where should you create a (..)photo directory to intercept the photo segment?
+
+A) In the root directory
+B) Within the feed segment
+C) Inside the photo segment
+D) In the @modal slot
+Correct Answer: B
+Which of the following is NOT a benefit of using intercepting routes for modals?
+
+A) Making the modal content shareable through a URL
+B) Preserving context when the page is refreshed
+C) Closing the modal on backward navigation
+D) Improving server-side rendering performance
+Correct Answer: D
+What should happen when you navigate backward after opening a modal using intercepting routes?
+
+A) The entire page should reload
+B) The modal should close
+C) The user should be redirected to the home page
+D) The URL should change without closing the modal
+Correct Answer: B
+How do you reopen the modal on forward navigation when using intercepting routes?
+
+A) By using server-side rendering
+B) By intercepting the route again
+C) By creating a new route
+D) By updating the page layout
+Correct Answer: B
+What does the (..) matcher indicate in the context of intercepting routes?
+
+A) Matching segments at the same level
+B) Matching segments one level above
+C) Matching segments two levels above
+D) Matching segments from the root app directory
+Correct Answer: B
+Which component is typically used together with intercepting routes to create modals?
+
+A) <Modal>
+B) <Suspense>
+C) <Link>
+D) <Router>
+Correct Answer: A
+In the context of intercepting routes, what does it mean to mask the URL?
+
+A) Hide the URL from the browser
+B) Display a different URL in the browser while showing different content
+C) Encrypt the URL for security
+D) Redirect to a different URL
+Correct Answer: B
+Which of the following UI patterns can be implemented using intercepting routes?
+
+A) Opening a photo modal from a gallery
+B) Creating a static homepage
+C) Setting up API endpoints
+D) Implementing client-side rendering
+Correct Answer: A
+What does the convention (..)photo indicate in the provided example?
+
+A) The photo route is only one segment level higher
+B) The photo route is at the same level
+C) The photo route is two segments levels higher
+D) The photo route is from the root app directory
+Correct Answer: A
+How can you ensure that a modal remains shareable through a URL when using intercepting routes?
+
+A) By using server-side rendering
+B) By masking the URL
+C) By defining the modal in the root directory
+D) By creating a new route for the modal
+Correct Answer: B
+Which of the following examples could benefit from using intercepting routes with modals?
+
+A) Displaying a login form in a top navbar
+B) Creating a sitemap for the website
+C) Setting up static content pages
+D) Implementing a search feature
+Correct Answer: A
+What should be done to handle navigation to a photo page directly from a shareable URL in the context of intercepting routes?
+
+A) Intercept the route and display the modal
+B) Render the entire photo page without intercepting the route
+C) Redirect to the home page
+D) Mask the URL and display the modal
+Correct Answer: B
+How do you close a modal on backward navigation when using intercepting routes?
+
+A) By refreshing the page
+B) By intercepting the route again
+C) By masking the URL
+D) By navigating to the previous route
+Correct Answer: D
+What is a key advantage of using intercepting routes for highly dynamic sections of an app?
+
+A) Improved server load management
+B) Enhanced security features
+C) Maintaining context without switching the user to a different page
+D) Better static site generation
+Correct Answer: C
+Which component from the examples is used to navigate within the modal to close it?
+
+A) <Link>
+B) <Nav>
+C) <Button>
+D) <Router>
+Correct Answer: A

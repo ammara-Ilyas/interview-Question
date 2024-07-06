@@ -1,0 +1,145 @@
+
+Sure, here are multiple-choice questions (MCQs) based on the provided text about Middleware in Next.js:
+
+What is the primary purpose of middleware in Next.js?
+
+A) To enhance client-side rendering
+B) To run code before a request is completed
+C) To handle database operations
+D) To manage complex data fetching
+Correct Answer: B
+Which of the following is NOT a typical use case for middleware?
+
+A) Authentication and Authorization
+B) Server-Side Redirects
+C) Complex Data Fetching
+D) Bot Detection
+Correct Answer: C
+What should you use to define middleware in a Next.js project?
+
+A) api.js
+B) handler.js
+C) middleware.ts or middleware.js
+D) server.js
+Correct Answer: C
+What does the matcher property in the middleware configuration do?
+
+A) It specifies which files to cache
+B) It defines which paths the middleware will run on
+C) It sets the response headers
+D) It handles database connections
+Correct Answer: B
+Which of the following scenarios should be avoided when using middleware?
+
+A) Redirecting users based on their locale
+B) Logging request data for analytics
+C) Performing direct database operations
+D) Blocking bot traffic
+Correct Answer: C
+How can middleware handle cookies in Next.js?
+
+A) By using a separate API
+B) By setting cookies directly on the server
+C) Through the cookies extension on NextRequest and NextResponse
+D) By modifying the HTML headers
+Correct Answer: C
+What happens if you set large headers in middleware?
+
+A) The request will be processed normally
+B) It might cause a 431 Request Header Fields Too Large error
+C) The headers will be ignored
+D) The server will automatically compress them
+Correct Answer: B
+Which method should be used to handle background tasks in middleware?
+
+A) NextResponse.wait
+B) NextRequest.background
+C) waitUntil() method on NextFetchEvent
+D) nextBackground() function
+Correct Answer: C
+What is the correct way to configure middleware to handle CORS?
+
+A) By setting a CORS flag in next.config.js
+B) By configuring CORS headers in middleware
+C) By using a separate CORS library
+D) By setting the CORS policy in the HTML
+Correct Answer: B
+Which runtime does middleware currently support in Next.js?
+
+A) Node.js runtime
+B) Edge runtime
+C) Browser runtime
+D) Serverless runtime
+Correct Answer: B
+How can you exclude specific paths from middleware execution using matcher?
+
+A) By setting exclude property in middleware config
+B) By using a combination of source and missing or has arrays
+C) By writing custom JavaScript logic
+D) By setting include property in middleware config
+Correct Answer: B
+What should you do to bypass middleware for requests that include a specific header?
+
+A) Set the headers property to null
+B) Use the missing array in the matcher configuration
+C) Configure the middleware to ignore all headers
+D) Use the disableHeaders property in middleware config
+Correct Answer: B
+Which of the following methods can middleware use to produce a response directly?
+
+A) NextResponse.reply
+B) NextResponse.send
+C) NextResponse.next
+D) Response.json
+Correct Answer: D
+What is the role of the waitUntil() method in NextFetchEvent?
+
+A) To delay the response until a certain condition is met
+B) To extend the lifetime of the middleware until a promise settles
+C) To stop the middleware execution immediately
+D) To log events for debugging purposes
+Correct Answer: B
+Which flag disables Next.js redirects for adding or removing trailing slashes?
+
+A) skipMiddlewareUrlNormalize
+B) disableTrailingSlashRedirect
+C) skipTrailingSlashRedirect
+D) noTrailingSlashRedirect
+Correct Answer: C
+What does the skipMiddlewareUrlNormalize flag do?
+
+A) Disables URL normalization in Next.js
+B) Enables URL normalization for advanced use cases
+C) Redirects URLs with normalization issues
+D) Logs URL normalization errors
+Correct Answer: A
+How can you set request headers in a NextResponse object?
+
+A) Using the setHeader method
+B) By passing a headers object to NextResponse.next
+C) By directly modifying the request object
+D) By using the updateHeaders method
+Correct Answer: B
+What is the recommended way to handle heavy computational tasks in a Next.js application?
+
+A) Within Middleware
+B) Within Route Handlers
+C) Within the Client Side Code
+D) Directly in the HTML files
+Correct Answer: B
+Which middleware version introduced the ability to modify request headers, response headers, and send responses?
+
+A) v13.1.0
+B) v13.0.0
+C) v12.2.0
+D) v12.0.0
+Correct Answer: B
+How can middleware be structured for better organization in a Next.js project?
+
+A) By using multiple middleware.ts files
+B) By importing separate functionalities into a single middleware.ts file
+C) By placing middleware functions directly in each route
+D) By defining middleware logic in the next.config.js file
+Correct Answer: B
+
+CORS (Cross-Origin Resource Sharing) 

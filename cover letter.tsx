@@ -37,3 +37,8 @@ www.linkedin.com/in/ammara-ilyas-943045292
 https://github.com/ammara-Ilyas/
 "
 Red Start Technology
+restful api
+react
+webpack
+ui/ux
+problem solving

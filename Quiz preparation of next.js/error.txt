@@ -1,0 +1,10 @@
+What happens if you set large headers in middleware?
+
+A) The request will be processed normally
+B) It might cause a 431 Request Header Fields Too Large error
+
+307 (Temporary) or 303 (Server Action)
+
+	307 (Temporary) or 308 (Permanent)
+
+A 405 error, also known as a "Method Not Allowed" error, is a HTTP response status code indicating that the server is refusing to accept the request method used by the client.
