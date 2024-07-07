@@ -1,0 +1,165 @@
+What directive is used to define a Server Action in Next.js?
+
+A. "use async"
+B. "use server"
+C. "use action"
+D. "use component"
+Answer: B. "use server"
+
+Where can the "use server" directive be placed to mark all exports as Server Actions?
+
+A. At the top of an async function
+B. At the bottom of a component
+C. At the top of a separate file
+D. Inside the return statement
+Answer: C. At the top of a separate file
+
+What method is used by Server Actions behind the scenes?
+
+A. GET
+B. PUT
+C. DELETE
+D. POST
+Answer: D. POST
+
+How can a Server Action be invoked in a Client Component?
+
+A. Using the inline "use server" directive
+B. Using the module-level "use server" directive
+C. Using the "use action" directive
+D. Using the "use client" directive
+Answer: B. Using the module-level "use server" directive
+
+What hook is used to show a pending state while a form is being submitted?
+
+A. usePending
+B. useFormPending
+C. useFormStatus
+D. useFormState
+Answer: C. useFormStatus
+
+What type of arguments and return values must Server Actions have?
+
+A. Serializable by React
+B. JSON stringified
+C. XML format
+D. HTML encoded
+Answer: A. Serializable by React
+
+How can you pass additional arguments to a Server Action?
+
+A. Using the bind method
+B. Using the call method
+C. Using query parameters
+D. Using global variables
+Answer: A. Using the bind method
+
+Which hook allows you to optimistically update the UI before a Server Action finishes?
+
+A. usePending
+B. useOptimistic
+C. useState
+D. useEffect
+Answer: B. useOptimistic
+
+What should you use to revalidate the Next.js Cache inside your Server Actions?
+
+A. revalidateData
+B. revalidateCache
+C. revalidatePath
+D. revalidatePage
+Answer: C. revalidatePath
+
+How can you handle server-side validation in Server Actions?
+
+A. Using HTML validation only
+B. Using useState to manage fields
+C. Using a validation library like zod
+D. Using inline JavaScript validation
+Answer: C. Using a validation library like zod
+
+How can you redirect a user to a different route after the completion of a Server Action?
+
+A. Using window.location.href
+B. Using redirect API
+C. Using history.push
+D. Using navigate API
+Answer: B. Using redirect API
+
+What API is used to manage cookies inside a Server Action?
+
+A. cookieHandler
+B. cookieManager
+C. cookies API
+D. cookieStore
+Answer: C. cookies API
+
+
+
+What is a recommended method for handling errors in Server Actions?
+
+A. Ignoring errors
+B. Logging errors to console
+C. Using try/catch blocks
+D. Sending errors to an external service
+Answer: C. Using try/catch blocks
+
+Which hook should be used to trigger a Server Action when a component mounts or a dependency changes?
+
+A. useEffect
+B. useServerAction
+C. useState
+D. useFormState
+Answer: A. useEffect
+
+What is the primary purpose of the allowedOrigins configuration in Server Actions?
+
+A. To specify the origins from which the Server Actions can be invoked
+B. To enable CORS support
+C. To enhance performance
+D. To allow multiple origins for the same Server Action
+Answer: A. To specify the origins from which the Server Actions can be invoked
+
+
+How can you invoke a Server Action in Next.js?
+a) By adding an action prop to a <form> element
+b) By using the useServerAction hook
+c) By calling the Server Action directly from a <button> element
+d) By using the fetch API
+Answer: a) By adding an action prop to a <form> element
+What happens if JavaScript is disabled or hasn't loaded yet when using Server Actions?
+a) The form submission will fail
+b) The form submission will be delayed
+c) The form submission will work as expected due to progressive enhancement
+d) The Server Action will not be invoked
+Answer: c) The form submission will work as expected due to progressive enhancement
+How can you pass additional arguments to a Server Action?
+a) Using the bind method
+b) Using the useServerAction hook
+c) Using the fetch API
+d) By adding an args prop to the <form> element
+Answer: a) Using the bind method
+What can you use to show a pending state while a form is being submitted?
+a) useFormStatus hook
+b) useOptimistic hook
+c) useServerAction hook
+d) fetch API
+Answer: a) useFormStatus hook
+What library can you use for server-side validation of form fields?
+a) zod
+b) yup
+c) joi
+d) react-hook-form
+Answer: a) zod
+What can you use to update the UI before a Server Action finishes?
+a) useOptimistic hook
+b) useFormStatus hook
+c) useServerAction hook
+d) fetch API
+Answer: a) useOptimistic hook
+Where can you invoke a Server Action besides a <form> element?
+a) In a <button> element
+b) In a <input type="submit"> element
+c) In a <div> element
+d) In a <span> element
+Answer: a) In a <button> element, b) In a <input type="submit"> element

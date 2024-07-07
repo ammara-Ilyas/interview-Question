@@ -1,0 +1,177 @@
+Loading UI and Streaming in React with Next.js
+What is the purpose of the loading.js file in a Next.js application?
+
+A. To define custom error handling.
+B. To create instant loading states during navigation.
+C. To handle authentication.
+D. To manage user sessions.
+Answer: B
+
+Where should the loading.js file be placed in a Next.js project?
+
+A. At the root of the project.
+B. Inside the pages folder.
+C. Inside the same folder as layout.js and page.js.
+D. In the public directory.
+Answer: C
+
+What is shown immediately upon navigation when using loading.js?
+
+A. A blank screen.
+B. An instant loading state such as skeletons or spinners.
+C. The full page content.
+D. A 404 error page.
+Answer: B
+
+What functionality does Suspense provide when wrapping a component?
+
+A. It handles error boundaries.
+B. It shows fallback UI while performing an asynchronous action.
+C. It delays component rendering until user interaction.
+D. It pre-fetches data for future navigation.
+Answer: B
+
+Which of the following statements is true about streaming with React and Next.js?
+
+A. It delays sending HTML to the client until all data is fetched.
+B. It breaks down HTML into smaller chunks sent progressively to the client.
+C. It only works with client-side rendering.
+D. It does not work with React components.
+Answer: B
+
+What is the benefit of using streaming for server rendering?
+
+A. It increases the time to interactive (TTI).
+B. It reduces the time to first byte (TTFB) and first contentful paint (FCP).
+C. It prevents the server from rendering HTML.
+D. It blocks the page until all data is fetched.
+Answer: B
+
+How does Suspense improve user experience in a Next.js application?
+
+A. By immediately showing the final content.
+B. By progressively rendering HTML and allowing selective hydration.
+C. By blocking navigation until all content loads.
+D. By pre-fetching data for offline use.
+Answer: B
+
+What status code is returned when streaming is successful in Next.js?
+
+A. 404
+B. 500
+C. 200
+D. 301
+Answer: C
+
+What ensures that <head> tags are included in the first part of a streamed response in Next.js?
+
+A. useEffect
+B. getStaticProps
+C. generateMetadata
+D. getServerSideProps
+Answer: C
+
+What should be used to verify how a page appears to Google's web crawlers?
+
+A. Lighthouse
+B. Rich Results Test tool
+C. Google Analytics
+D. PageSpeed Insights
+Answer: B
+
+Which of the following is NOT a benefit of using the loading.js convention in Next.js?
+
+A. Immediate navigation.
+B. Non-blocking route changes.
+C. Maintaining interactivity in shared layouts.
+D. Automatically caching page content.
+Answer: D
+
+What is a common use case for the loading.js file in a Next.js application?
+
+A. Displaying error messages.
+B. Pre-rendering a meaningful part of future screens.
+C. Fetching data from an API.
+D. Handling form submissions.
+Answer: B
+
+Which feature allows React components to be considered as chunks and sent progressively from the server to the client?
+
+A. Client-Side Rendering
+B. Server-Side Rendering without Streaming
+C. Streaming with Suspense
+D. Static Site Generation
+Answer: C
+
+What does the following code example do?
+
+typescript
+Copy code
+import { Suspense } from 'react'
+import { PostFeed, Weather } from './Components'
+ 
+export default function Posts() {
+  return (
+    <section>
+      <Suspense fallback={<p>Loading feed...</p>}>
+        <PostFeed />
+      </Suspense>
+      <Suspense fallback={<p>Loading weather...</p>}>
+        <Weather />
+      </Suspense>
+    </section>
+  )
+}
+A. Pre-fetches data for the PostFeed and Weather components.
+B. Shows the PostFeed and Weather components immediately.
+C. Displays fallback UI while PostFeed and Weather components load asynchronously.
+D. Blocks rendering until PostFeed and Weather components are fully loaded.
+Answer: C
+
+What does "selective hydration" mean in the context of React and Next.js?
+
+A. Loading all components at once.
+B. Prioritizing which components to make interactive first based on user interaction.
+C. Fetching data only for the components that are visible.
+D. Hydrating the entire page content immediately.
+Answer: B
+
+What issue can occur with some browsers when using streaming, particularly with small responses?
+
+A. They may buffer the response and not display it until it exceeds 1024 bytes.
+B. They may render the entire response at once.
+C. They may ignore the streaming response.
+D. They may return a 404 error for small responses.
+Answer: A
+
+In the context of server-side rendering with streaming, what is meant by "Time to First Byte" (TTFB)?
+
+A. The time taken to load the full page content.
+B. The time taken to receive the first byte of data from the server.
+C. The time taken to fully render the HTML on the client.
+D. The time taken to complete all data fetching.
+Answer: B
+
+How does Next.js handle SEO when streaming content?
+
+A. By blocking all streaming content from web crawlers.
+B. By ensuring head tags are included in the first part of the streamed response.
+C. By sending a separate SEO metadata file.
+D. By delaying the response until all content is available.
+Answer: B
+
+Why is streaming particularly beneficial for applications with long data requests?
+
+A. It caches the data locally on the client.
+B. It reduces the server load by batching requests.
+C. It prevents long data requests from blocking the page rendering.
+D. It pre-renders all components before sending them to the client.
+Answer: C
+
+Which tool can be used to view the serialized HTML of a page for SEO purposes in a Next.js application?
+
+A. Google Search Console
+B. Rich Results Test tool
+C. Google PageSpeed Insights
+D. Google Analytics
+Answer: B

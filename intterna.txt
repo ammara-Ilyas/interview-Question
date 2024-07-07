@@ -1,0 +1,119 @@
+What is a locale in the context of internationalization?
+
+A. A type of middleware in Next.js
+B. An identifier for a set of language and formatting preferences
+C. A server-side rendering function
+D. A client-side routing mechanism
+Answer: B
+
+Which of the following is a correct example of a locale identifier?
+
+A. en-US
+B. html-css
+C. JavaScript-Node
+D. React-Next
+Answer: A
+
+In Next.js, how can routing be internationalized?
+
+A. By using internationalized domain names only
+B. By using sub-paths or domains
+C. By using client-side routing exclusively
+D. By modifying the node server configuration
+Answer: B
+
+What does the match function from @formatjs/intl-localematcher library do?
+
+A. It matches the user's preferred locale with supported locales.
+B. It matches server requests to client components.
+C. It matches URLs to React components.
+D. It matches incoming HTTP headers to the server's response.
+Answer: A
+
+Which of the following libraries can be used to determine the user's preferred language from the request headers?
+
+A. React Router
+B. Express
+C. Negotiator
+D. Axios
+Answer: C
+
+What does the middleware.js file example provided do if there is no supported locale in the pathname?
+
+A. It returns a 404 error.
+B. It redirects the user to the default locale.
+C. It renders a client-side error page.
+D. It ignores the request.
+Answer: B
+
+How should special files inside the app/ directory be structured to handle different locales dynamically?
+
+A. They should be placed directly inside app/.
+B. They should be nested under app/[lang].
+C. They should be in the public/ directory.
+D. They should be inside a locales/ directory.
+Answer: B
+
+What is the purpose of the getDictionary function in the localization example?
+
+A. To fetch user data from a database.
+B. To load translations for the requested locale.
+C. To handle client-side routing.
+D. To manage middleware functions.
+Answer: B
+
+Where should the translation dictionaries (e.g., en.json and nl.json) be placed in a Next.js project?
+
+A. Inside the public/ directory
+B. Inside the app/[lang]/dictionaries directory
+C. Inside the pages/ directory
+D. Inside the components/ directory
+Answer: B
+
+What is the benefit of server-side translation handling in Next.js using Server Components?
+
+A. It reduces the client-side JavaScript bundle size.
+B. It improves the client-side routing performance.
+C. It allows for real-time translation updates.
+D. It enables client-side caching of translations.
+Answer: A
+
+How can you generate static routes for a given set of locales in Next.js?
+
+A. Using the getServerSideProps function
+B. Using the getStaticProps function
+C. Using the generateStaticParams function
+D. Using the useEffect hook
+Answer: C
+
+What should the lang attribute in the <html> tag contain when using internationalization in Next.js?
+
+A. The current locale
+B. The default language
+C. The server name
+D. The page title
+Answer: A
+
+Which HTTP header is commonly used to determine the user's preferred language in internationalized routing?
+
+A. Content-Type
+B. Accept-Language
+C. Authorization
+D. User-Agent
+Answer: B
+
+When using generateStaticParams for localization, what type of component should the function be used in?
+
+A. Client-side component
+B. Server-side component
+C. Both client-side and server-side components
+D. Static component
+Answer: B
+
+What would be the pathname of an incoming request /products redirected to if the default locale is en-US and no specific locale is found in the pathname?
+
+A. /en-US/products
+B. /products/en-US
+C. /en/products
+D. /products/en
+Answer: A
