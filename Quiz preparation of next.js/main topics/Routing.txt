@@ -1,0 +1,39 @@
+                  Group route
+
+Route groups are useful for:
+
+Organizing routes into groups e.g. by site section, intent, or team.
+Enabling nested layouts in the same route segment level:
+Creating multiple nested layouts in the same segment, including multiple root layouts
+Adding a layout to a subset of routes in a common segment
+
+Opting specific segments into a layout
+Organize routes without affecting the URL path
+Creating multiple root layouts
+        
+                Dynamic route
+1  Dynamic Segments are passed as the params prop to layout, page, route, and generateMetadata functions.
+
+2  Dynamic Segments that are filled in at request time or prerendered at build time.
+
+3 If content is fetched within the generateStaticParams function using a fetch request, the requests are automatically memoized.So it pass to multiple request by  generateStaticParams, Layouts, and Pages will only be made once, which decreases build times.
+
+/////////////////catch all catch
+The difference between catch-all and optional catch-all segments is that with optional, the route without the parameter is also matched (/shop in the example above).
+
+///////////////////Parallel route
+
+1  Parallel Routes allows you to simultaneously or conditionally render one or more pages within the same layout. They are useful for highly dynamic sections of an app, such as dashboards and feeds on social sites.
+
+2  Parallel routes are created using named slots. Slots are defined with the @folder
+Slots are passed as props to the shared parent layout
+slots are not route segments and do not affect the URL structure. 
+
+slot depend upon 2 type navigation
+This is like switching between tabs in a browser - only the current tab changes, others remain the same partial rendering soft navigation
+
+: After a full-page load (browser refresh), Next.js cannot determine the active state for the slots that don't match the current URL. Instead, it will render a default.js file for the unmatched slots, or 404 if default.js doesn't exist.
+
+default.js You can define a default.js file to render as a fallback for unmatched slots during the initial load or full-page reload.
+
+
