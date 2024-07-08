@@ -16,18 +16,7 @@ B) A way to generate IaC configuration automatically from code
 C) A way to build houses
 D) A way to write blueprints
 Answer: B) A way to generate IaC configuration automatically from code
-4. What is the advantage of Framework-Defined Infrastructure (FdI) over Infrastructure as Code (IaC)?
-A) It requires more manual effort
-B) It requires less manual effort
-C) It is less predictable
-D) It is more costly
-Answer: B) It requires less manual effort
-. What is the "Hollywood principle" in the context of frameworks?
-A) "Don't call us, we'll call you"
-B) "Call us, we'll call you back"
-C) "We'll call you, don't call us"
-D) "Don't call us, we're busy"
-Answer: A) "Don't call us, we'll call you"
+
 
 6. What is the benefit of using frameworks in application development?
 A) They make development more complex
@@ -86,24 +75,12 @@ C) It only works with certain types of code changes
 D) It ignores code changes
 Answer: B) It automatically updates the infrastructure
 
-11. What is the benefit of using FdI with a serverless function?
-A) It requires more manual effort
-B) It provides faster deployment
-C) It enables automatic scaling
-D) It only works with small applications
-Answer: C) It enables automatic scaling
 12. How does FdI handle routing in a Next.js application?
 A) It requires manual routing configuration
 B) It automatically generates a routing table
 C) It only works with certain routes
 D) It ignores routing
 Answer: B) It automatically generates a routing table
-13. What is the role of the getStaticProps function in Next.js?
-A) To fetch data for a dynamic page
-B) To render a page statically
-C) To set up infrastructure
-D) To define the application's routing table
-Answer: B) To render a page statically
 14. How does FdI benefit the scalability of an application?
 A) It limits scalability
 B) It enables automatic scaling
@@ -117,18 +94,6 @@ C) It only works with small applications
 D) It ignores cloud platform features
 Answer: B) It provides faster deployment and automatic scaling
 
-1. What does getStaticProps in Next.js imply?
-A) Render the page on every view
-B) Generate a static HTML page at build time
-C) Use a serverless function to render the page
-D) Use a server to render the page
-Answer: B) Generate a static HTML page at build time
-2. What happens when a page uses getStaticProps in Next.js?
-A) A serverless function is deployed to render the page
-B) The page is rendered on every view
-C) The page is generated statically at build time
-D) The page is not rendered
-Answer: C) The page is generated statically at build time
 3. What is the concept of Deferred Static Generation in Gatsby?
 A) Rendering pages on every view
 B) Generating static pages at build time
@@ -178,38 +143,49 @@ B) Serverless architecture and proprietary systems
 C) Platform as a Service (PaaS) and Git
 D) All of the above
 Answer: A) Infrastructure as Code (IaC) and Kubernetes
-You
-more mcqs from it
-Meta AI
-Here are some additional MCQs based on the text:
-6. What is the benefit of framework-defined infrastructure for local development?
-A) It makes local development harder
-B) It makes production infrastructure management easier
-C) It allows for easier and more accurate local development
-D) It eliminates the need for local development
-Answer: C) It allows for easier and more accurate local development
-7. What is the purpose of immutable deployments?
-A) To allow for easy rollbacks to previous versions
-B) To make deployments more complex and difficult
-C) To eliminate the need for version control
-D) To make deployments more prone to errors
-Answer: A) To allow for easy rollbacks to previous versions
-8. How does serverless architecture manage production infrastructure?
-A) It makes it more complex and difficult
-B) It eliminates the need for infrastructure management
-C) It makes it easier and more scalable
-D) It has no effect on infrastructure management
-Answer: C) It makes it easier and more scalable
-9. What is the relationship between framework-defined infrastructure and immutable deployments?
-A) They are mutually exclusive
+Framework-defined infrastructure abstracts over cloud primitives such as servers, message queues, and serverless functions, making them mere implementation details of the frameworks' concepts.
 
-B) They are complementary and work together
-C) They are unrelated
-D) They are identical
-Answer: B) They are complementary and work together
-10. What is the benefit of using framework-defined infrastructure and immutable deployments together?
-A) It makes development and deployment more difficult
-B) It makes development and deployment easier and more efficient
-C) It eliminates the need for version control
-D) It makes deployments more prone to errors
-Answer: B) It makes development and deployment easier and more efficient
+ 1.True
+
+2. False
+Next.js which is built on the concepts of Framework-defined infrastructure supports the following:
+
+(Select one or more)
+
+1. Providing portability between different target infrastructure providers
+
+2. Increases the need to manually configure infrastructure to run an application in production
+
+3. Increasing the time spent writing product code over system management
+
+4. Allowing the unchanged use of the framework's native local development tools
+
+5. Standardizing on pre-reviewed secure services
+/While the word framework is hard to define, the Hollywood principle," writes code within the hooks provided by it. "probably captures the meaning, where the framework manages the high-level application flow while the developer
+
+O1. I love you, but don't call me
+
+O2 Don't call us, we call you
+
+3. We will call you tonight
+
+4. Call us anytime, but we will call you
+Framework-defined infrastructure takes advantage of both the___ and the predictable structure of framework-based applications to automatically map framework concepts onto the appropriate infrastructure without the need for explicit declaration or configuration of the infrastructure.
+
+1. Factory Method
+
+2. Abstract Factory
+
+3. Inversion of Control
+
+ 4, Middleware
+Inversion of Control (IoC) is a design principle that promotes the inversion of the flow of control in a software application, Instead of a component or class controlling the flow of execution, control is inverted, and the framework or container manages the flow and invokes the appropriate components.
+
+1. True
+
+2. False
+In Next.js, Vercel is implementing framework-defined infrastructure for more predictable, lower cost, and lower risk DevOps through truly serverless--and, for developers, infrastructureless--architecture.
+
+1. True
+
+ 2. False

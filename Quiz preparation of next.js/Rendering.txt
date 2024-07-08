@@ -1,0 +1,278 @@
+What are the two environments where web applications can be rendered?
+
+A. Server and Database
+B. Client and Server
+C. Browser and Console
+D. Localhost and Remote
+Answer: B. Client and Server
+
+What is the primary role of the client in a web application?
+
+A. Storing application code
+B. Sending requests to the server and rendering the user interface
+C. Processing HTTP requests
+D. Managing databases
+Answer: B. Sending requests to the server and rendering the user interface
+
+Which of the following languages can be used on both the client and server side in a React application?
+
+A. JavaScript
+B. PHP
+C. Python
+D. Ruby
+Answer: A. JavaScript
+
+What is the first step in the Request-Response Lifecycle?
+
+A. HTTP Request
+B. HTTP Response
+C. Server Processing
+D. User Action
+Answer: D. User Action
+
+What does the server send back to the client after processing a request?
+
+A. User Interface
+B. HTTP Request
+C. HTTP Response
+D. Database Query
+Answer: C. HTTP Response
+
+What concept in web development separates different environments such as the client and the server?
+
+A. Request-Response Lifecycle
+B. Network Boundary
+C. Server Module Graph
+D. Client Module Graph
+Answer: B. Network Boundary
+
+In React, how do you define the boundary between client and server components?
+
+A. Using "use client" and "use server" conventions
+B. By separating HTML and CSS
+C. By creating different JavaScript files
+D. By setting up separate databases
+Answer: A. Using "use client" and "use server" conventions
+
+What does the client do with the resources received from the server?
+
+A. Stores them in a database
+B. Parses them to render the user interface
+C. Sends them to another server
+D. Encrypts them for security
+Answer: B. Parses them to render the user interface
+
+What is the purpose of the client module graph in a React application?
+
+A. To store server-side data
+B. To render components on the client
+C. To handle user authentication
+D. To manage network requests
+Answer: B. To render components on the client
+
+What is encouraged by thinking about what to execute on the server before sending results to the client in a hybrid web application?
+
+A. Improved database performance
+B. Enhanced user interface design
+C. Better understanding of where to render components and place the Network Boundary
+D. Faster client-side execution
+Answer: C. Better understanding of where to render components and place the Network Boundary
+
+Benefit of server 
+
+Faster data fetching
+Improved security
+Caching for better performance
+Better search engine optimization
+Streaming
+faster page load
+
+What is the role of the RSC Payload on the client?
+
+A. To generate HTML for server components
+B. To reconcile the Client and Server Component trees and update the DOM
+C. To fetch data from the server
+D. To manage user authentication
+
+How does Next.js handle full page loads for Client Components?
+
+A. By rendering Client Components only on the client
+B. By rendering a static HTML preview on the server for both Client and Server Components
+C. By ignoring Server Components
+D. By downloading the Client Component JavaScript bundle before rendering
+Answer: B. By rendering a static HTML preview on the server for both Client and Server Components
+What is the purpose of the React Server Component Payload (RSC Payload)?
+
+A. To store the client-side state
+B. To include references to Client Components and render HTML on the server
+C. To manage user authentication
+D. To cache static assets
+Answer: B. To include references to Client Components and render HTML on the server
+
+Composition pattern
+
+Which of the following is NOT a valid reason to use Server Components?
+
+A. Fetch data
+B. Access backend resources directly
+C. Use browser-only APIs
+D. Keep sensitive information on the server
+Answer: C. Use browser-only APIs
+
+Which directive is used to mark a file and its imported modules as Client Components?
+
+A. "use server"
+B. "use client"
+C. "client-only"
+D. "server-only"
+Answer: B. "use client"
+
+What is a common pattern to prevent server-only code from being included in the client bundle?
+
+A. Using the "use server" directive
+B. Using the "use client" directive
+C. Using the server-only package
+D. Using environment variables prefixed with NEXT_PUBLIC
+Answer: C. Using the server-only package
+
+What will happen if you try to use a module marked with server-only in a Client Component?
+
+A. It will work as expected
+B. It will cause a runtime error
+C. It will be ignored by the build process
+D. It will cause a build-time error
+Answer: D. It will cause a build-time error
+
+Which package can be used to mark modules that contain client-only code?
+
+A. server-only
+B. client-only
+C. use-client
+D. use-server
+Answer: B. client-only
+
+What should you do if a third-party component using client-only features does not have the "use client" directive?
+
+A. Ignore the error and use it directly in a Server Component
+B. Wrap the third-party component in your own Client Component
+C. Add the "use client" directive to the third-party component
+D. Use the component without modification
+Answer: B. Wrap the third-party component in your own Client Component
+
+Why is it important to keep server-only code out of the client environment?
+
+A. To improve client-side performance
+B. To prevent exposing sensitive information to the client
+C. To reduce the size of the client bundle
+D. To enable faster data fetching
+Answer: B. To prevent exposing sensitive information to the client
+
+What is the result of using an environment variable not prefixed with NEXT_PUBLIC in a Client Component?
+
+A. It will be exposed to the client
+B. It will be replaced with an empty string
+C. It will cause a runtime error
+D. It will function normally
+Answer: B. It will be replaced with an empty string
+
+What is a common use case for wrapping third-party components in your own Client Components?
+
+A. To reduce the number of imports
+B. To ensure compatibility with Server Components
+C. To customize the third-party component's styling
+D. To avoid using environment variables
+Answer: B. To ensure compatibility with Server Components
+
+What error will you see if you try to create a React context at the root of an application in a Server Component?
+
+A. useContext can not be used within Server Components
+B. useState can not be used within Server Components
+C. createContext can not be used within Server Components
+D. useEffect can not be used within Server Components
+Answer: C. createContext can not be used within Server Components
+
+Why is React context not supported in Server Components?
+
+A. React context requires browser-specific APIs
+B. React context is designed to work with client-side state management
+C. Server Components cannot handle React context due to their stateless nature
+D. React context can only be used with Client Components
+Answer: C. Server Components cannot handle React context due to their stateless nature
+
+What should you do to fix the error caused by creating a context at the root of your application in a Server Component?
+
+A. Use the "use server" directive
+B. Create the context and render its provider inside a Client Component
+C. Move the context creation to a separate module
+D. Use React state instead of context
+Answer: B. Create the context and render its provider inside a Client Component
+
+Which of the following statements about the "use client" directive is true?
+
+A. It allows Server Components to use browser-specific APIs
+B. It should be used at the root of all React applications
+C. It marks a module and its imports as part of the client bundle
+D. It is necessary for all third-party components
+Answer: C. It marks a module and its imports as part of the client bundle
+
+How can you ensure that third-party components using client-only features work within Server Components?
+
+A. Import them directly into Server Components
+B. Wrap them in your own Client Components
+C. Use the "use server" directive
+D. Move them to a separate project
+Answer: B. Wrap them in your own Client Components
+
+Which package can library authors use to mark client entry points in their packages?
+
+A. server-only
+B. client-only
+C. use-client
+D. use-server
+Answer: B. client-only
+
+What is the recommended way to reduce the Client JavaScript bundle size?
+
+A. Use only Server Components
+B. Move Client Components down your component tree
+C. Avoid using third-party packages
+D. Minimize the use of context providers
+Answer: B. Move Client Components down your component tree
+
+What happens if you try to import a Server Component into a Client Component module?
+
+A. It will work as expected
+B. It will cause a runtime error
+C. It will cause a build-time error
+D. It will require a new request back to the server
+Answer: D. It will require a new request back to the server
+
+Which pattern allows you to pass a Server Component to a Client Component?
+
+A. Importing Server Component directly into Client Component
+B. Passing Server Component as props to a Client Component
+C. Using server-only package within Client Component
+D. Using client-only package within Server Component
+Answer: B. Passing Server Component as props to a Client Component
+
+What is the purpose of using the children prop in a Client Component?
+
+A. To avoid re-rendering a nested child component
+B. To ensure compatibility with Server Components
+C. To manage state more efficiently
+D. To handle browser-specific APIs
+Answer: A. To avoid re-rendering a nested child component
+
+Which pattern is NOT supported when interleaving Server and Client Components?
+
+A. Passing Server Components as props to Client Components
+B. Importing Server Components into Client Components
+C. Rendering Client Components inside Server Components
+D. Using the children prop to pass JSX
+Answer: B. Importing Server Components into Client Components
+
+
+
+
+
+
