@@ -1,0 +1,61 @@
+Template correct statements
+
+a new instance of the component is mounted
+DOM elements are recreated
+State is not preserved
+page is  rerender
+effect are synchrorized
+
+2
+
+Suspense Boundaries inside layouts only show the fallback the first time the Layout is loaded and not when switching pages.
+For templates, the fallback is shown on each navigation.
+
+3  There are four ways to navigate between routes in Next.js:
+
+Using the <Link> Component
+Using the useRouter hook (Client Components)
+Using the redirect function (Server Components)
+Using the native History API
+
+4'
+link tag to provide prefetching and client-side navigation between routes
+
+5
+You can use usePathname() to determine if a link is active. 
+
+6
+scroll: false to router.push() or router.replace().
+Globally disabling scroll restoration:
+    <Link href="/about" scroll={false}>
+    router.push('/about', { scroll: false });
+7   statement about redirect is correct
+
+throw error so should be used in outside try/catch block
+by default return 307 code when used in server action return 303 code in POST
+redirect can be called in Client Components during the rendering process but not in event handlers. You can use the useRouter hook instead.
+redirect also accepts absolute URLs and can be used to redirect to external links.
+If you'd like to redirect before the render process, use next.config.js or Middleware.
+
+8
+pushState is like adding a new chapter to your journey, allowing you to go back and forth.
+replaceState is like editing the current chapter, replacing the old information with new information, and not allowing you to go back to the previous version.
+
+9 Prefetching
+router.prefetch(): The useRouter hook can be used to prefetch routes programmatically.
+<Link> component: Routes are automatically prefetched as they become visible in the user's viewport.
+
+10  How Routing and Navigation Works
+code splitting 
+prefetching
+caching
+partial rendering
+5. Soft Navigation
+6. Back and Forward Navigation
+7. Routing between pages/ and app/
+
+
+11  Partial rendering
+ changes reduces the amount of data transferred and
+ execution time, 
+leading to improved performance.
