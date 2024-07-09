@@ -1,0 +1,4 @@
+1   redirect and permanentRedirect in Server Components, Route Handlers, and Server Actions.
+
+2  Redirect is temporary and doesn't update search engine indexes.Uses a 301 status code (Found).
+PermanentRedirect is permanent and updates search engine indexes.Uses a 302 status code (Found).

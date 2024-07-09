@@ -1,0 +1,32 @@
+benefits of loading
+Fast navigation, even with server-centric routing
+Navigation is interruptible, meaning you can navigate away before the content fully loads
+Shared layouts remain interactive while new route segments loads
+
+
+2 Streaming are support in
+node runtime
+edge runtime
+both.
+
+3 Streaming in SSR and its lamitation
+First, all data for a given page is fetched on the server.
+The server then renders the HTML for the page.
+The HTML, CSS, and JavaScript for the page are sent to the client.
+A non-interactive user interface is shown using the generated HTML, and CSS.
+Finally, React hydrates the user interface to make it interactive.
+
+4 Streaming helps in three ways:
+Faster page loading: Reduces the time it takes for the page to start loading (Time To First Byte).
+Faster content display: Reduces the time it takes for the page to display its main content (First Contentful Paint).
+Faster interaction: Reduces the time it takes for the page to become interactive, especially on slower devices (Time to Interactive).
+
+5 a component that performs an asynchronous action (e.g. fetch data), showing fallback UI (e.g. skeleton, spinner) while it's happening, and then swapping in your component once the action completes.
+
+6 Streaming does not impact SEO
+7  Which tool can be used to see how a page appears to Google's web crawlers?
+Rich Result text tool   which give Serialized HTML (source)
+
+8Which of the following is an example of how the server can communicate errors or issues to the client within the streamed content by notFound redirect?
+9  What happens to the response headers once they are sent to the client? they not update
+

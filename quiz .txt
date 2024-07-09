@@ -1,0 +1,215 @@
+1. What is Infrastructure as Code (IaC)?
+A) A way to manage infrastructure manually
+B) A way to manage infrastructure using code and configuration files
+C) A way to build houses
+D) A way to write blueprints
+Answer: B) A way to manage infrastructure using code and configuration files
+2. What is the benefit of using Infrastructure as Code (IaC)?
+A) It makes infrastructure management more manual
+B) It makes infrastructure management more predictable and cost-effective
+C) It makes infrastructure management more risky
+D) It makes infrastructure management more complex
+Answer: B) It makes infrastructure management more predictable and cost-effective
+3. What is Framework-Defined Infrastructure (FdI)?
+A) A way to manage infrastructure manually
+B) A way to generate IaC configuration automatically from code
+C) A way to build houses
+D) A way to write blueprints
+Answer: B) A way to generate IaC configuration automatically from code
+4. What is the advantage of Framework-Defined Infrastructure (FdI) over Infrastructure as Code (IaC)?
+A) It requires more manual effort
+B) It requires less manual effort
+C) It is less predictable
+D) It is more costly
+Answer: B) It requires less manual effort
+. What is the "Hollywood principle" in the context of frameworks?
+A) "Don't call us, we'll call you"
+B) "Call us, we'll call you back"
+C) "We'll call you, don't call us"
+D) "Don't call us, we're busy"
+Answer: A) "Don't call us, we'll call you"
+
+6. What is the benefit of using frameworks in application development?
+A) They make development more complex
+B) They provide structure and abstraction to applications
+C) They are hard to learn
+D) They are only used for small applications
+Answer: B) They provide structure and abstraction to applications
+7. What is the role of the framework in Framework-Defined Infrastructure (FdI)?
+A) To manually set up infrastructure
+B) To write code that describes the desired infrastructure
+C) To automatically create infrastructure based on the application code
+D) To manage the application's logic
+Answer: C) To automatically create infrastructure based on the application code
+8. What is the result of using Framework-Defined Infrastructure (FdI)?
+A) More time spent on system management
+B) Less time spent on system management
+C) More manual effort required
+D) Less scalability
+Answer: B) Less time spent on system management
+9. What is the advantage of FdI over IaC?
+A) FdI requires more manual effort
+B) FdI is less scalable
+C) FdI abstracts over cloud primitives
+D) FdI is only used for small applications
+Answer: C) FdI abstracts over cloud primitives
+10. What is the concept that allows FdI to automatically create infrastructure?
+A) Inversion of control
+B) Hollywood principle
+C) Framework-defined infrastructure
+D) Infrastructure as code
+Answer: A) Inversion of control
+
+previous ones. Here are a few:
+7. What is the advantage of using a framework like Next.js with FdI?
+A) It allows for manual infrastructure setup
+B) It provides a flexible way to manage application logic
+C) It enables automatic infrastructure setup and scaling
+D) It only works with small applications
+Answer: C) It enables automatic infrastructure setup and scaling
+8. How does FdI benefit the development process?
+A) It adds extra complexity to the development process
+B) It requires manual infrastructure setup
+C) It allows developers to focus on writing code
+D) It only works with certain frameworks
+Answer: C) It allows developers to focus on writing code
+9. What is the role of the gateway service in FdI?
+A) To provision infrastructure
+B) To manage application logic
+C) To route requests to the appropriate infrastructure
+D) To manage the database
+Answer: C) To route requests to the appropriate infrastructure
+10. How does FdI handle changes to the application code?
+A) It requires manual infrastructure updates
+B) It automatically updates the infrastructure
+C) It only works with certain types of code changes
+D) It ignores code changes
+Answer: B) It automatically updates the infrastructure
+
+11. What is the benefit of using FdI with a serverless function?
+A) It requires more manual effort
+B) It provides faster deployment
+C) It enables automatic scaling
+D) It only works with small applications
+Answer: C) It enables automatic scaling
+12. How does FdI handle routing in a Next.js application?
+A) It requires manual routing configuration
+B) It automatically generates a routing table
+C) It only works with certain routes
+D) It ignores routing
+Answer: B) It automatically generates a routing table
+13. What is the role of the getStaticProps function in Next.js?
+A) To fetch data for a dynamic page
+B) To render a page statically
+C) To set up infrastructure
+D) To define the application's routing table
+Answer: B) To render a page statically
+14. How does FdI benefit the scalability of an application?
+A) It limits scalability
+B) It enables automatic scaling
+C) It requires manual scaling
+D) It only works with small applications
+Answer: B) It enables automatic scaling
+15. What is the advantage of using FdI with a cloud platform like Vercel?
+A) It requires more manual effort
+B) It provides faster deployment and automatic scaling
+C) It only works with small applications
+D) It ignores cloud platform features
+Answer: B) It provides faster deployment and automatic scaling
+
+1. What does getStaticProps in Next.js imply?
+A) Render the page on every view
+B) Generate a static HTML page at build time
+C) Use a serverless function to render the page
+D) Use a server to render the page
+Answer: B) Generate a static HTML page at build time
+2. What happens when a page uses getStaticProps in Next.js?
+A) A serverless function is deployed to render the page
+B) The page is rendered on every view
+C) The page is generated statically at build time
+D) The page is not rendered
+Answer: C) The page is generated statically at build time
+3. What is the concept of Deferred Static Generation in Gatsby?
+A) Rendering pages on every view
+B) Generating static pages at build time
+C) Deploying a serverless function to perform deferred generation
+D) Not rendering pages
+Answer: C) Deploying a serverless function to perform deferred generation
+4. What happens when using form actions in SvelteKit?
+A) A serverless function is automatically created
+B) A server is automatically created
+C) The form is not submitted
+D) The form is submitted to a server
+Answer: A) A serverless function is automatically created
+5. What is the purpose of middleware in Next.js?
+A) To render pages on every view
+B) To generate static pages at build time
+C) To trigger the provisioning of edge computing resources
+D) To not render pages
+Answer: C) To trigger the provisioning of edge computing resources
+
+1. What problem does serverless architecture pose for local development?
+A) It makes local development easier
+B) It makes production infrastructure management easier
+C) It makes local development harder due to complex and proprietary systems
+D) It eliminates the need for local development
+Answer: C) It makes local development harder due to complex and proprietary systems
+2. What solution does framework-defined infrastructure provide for local development?
+A) It allows developers to create a local simulation of the complex serverless stack
+B) It eliminates the need for local development
+C) It uses the same framework tooling for local development as for production behavior
+D) It makes local development harder
+Answer: C) It uses the same framework tooling for local development as for production behavior
+3. What are immutable deployments?
+A) Deployments that can be changed and updated
+B) Deployments that are never changed and are immutable
+C) Deployments that are only used for production
+D) Deployments that are only used for local development
+Answer: B) Deployments that are never changed and are immutable
+4. How do immutable deployments work in a serverless world?
+A) They use up physical resources and become unavailable when unused
+B) They scale to zero and do not use physical resources when unused
+C) They are only used for production deployments
+D) They are only used for local development deployments
+Answer: B) They scale to zero and do not use physical resources when unused
+5. What technologies do framework-defined infrastructure and immutable deployments rely on?
+A) Infrastructure as Code (IaC) and Kubernetes
+B) Serverless architecture and proprietary systems
+C) Platform as a Service (PaaS) and Git
+D) All of the above
+Answer: A) Infrastructure as Code (IaC) and Kubernetes
+You
+more mcqs from it
+Meta AI
+Here are some additional MCQs based on the text:
+6. What is the benefit of framework-defined infrastructure for local development?
+A) It makes local development harder
+B) It makes production infrastructure management easier
+C) It allows for easier and more accurate local development
+D) It eliminates the need for local development
+Answer: C) It allows for easier and more accurate local development
+7. What is the purpose of immutable deployments?
+A) To allow for easy rollbacks to previous versions
+B) To make deployments more complex and difficult
+C) To eliminate the need for version control
+D) To make deployments more prone to errors
+Answer: A) To allow for easy rollbacks to previous versions
+8. How does serverless architecture manage production infrastructure?
+A) It makes it more complex and difficult
+B) It eliminates the need for infrastructure management
+C) It makes it easier and more scalable
+D) It has no effect on infrastructure management
+Answer: C) It makes it easier and more scalable
+9. What is the relationship between framework-defined infrastructure and immutable deployments?
+A) They are mutually exclusive
+
+B) They are complementary and work together
+C) They are unrelated
+D) They are identical
+Answer: B) They are complementary and work together
+10. What is the benefit of using framework-defined infrastructure and immutable deployments together?
+A) It makes development and deployment more difficult
+B) It makes development and deployment easier and more efficient
+C) It eliminates the need for version control
+D) It makes deployments more prone to errors
+Answer: B) It makes development and deployment easier and more efficient

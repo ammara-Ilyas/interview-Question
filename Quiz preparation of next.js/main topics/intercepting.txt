@@ -1,0 +1,46 @@
+
+///////////////////Parallel route
+
+1  Parallel Routes allows you to simultaneously or conditionally render one or more pages within the same layout. They are useful for highly dynamic sections of an app, such as dashboards and feeds on social sites.
+
+2  Parallel routes are created using named slots. Slots are defined with the @folder
+Slots are passed as props to the shared parent layout
+slots are not route segments and do not affect the URL structure. 
+
+slot depend upon 2 type navigation
+This is like switching between tabs in a browser - only the current tab changes, others remain the same partial rendering soft navigation
+
+: After a full-page load (browser refresh), Next.js cannot determine the active state for the slots that don't match the current URL. Instead, it will render a default.js file for the unmatched slots, or 404 if default.js doesn't exist.
+
+default.js You can define a default.js file to render as a fallback for unmatched slots during the initial load or full-page reload.
+
+3 useSelectedLayoutSegment(s)
+Both useSelectedLayoutSegment and useSelectedLayoutSegments accept a parallelRoutesKey parameter, which allows you to read the active route segment within a slot.
+return  array of string of active
+
+4 Tab Groups
+You can add a layout inside a slot to allow users to navigate the slot independently. This is useful for creating tabs.
+
+5 modal
+Making the modal content shareable through a URL.
+Preserving context when the page is refreshed, instead of closing the modal.
+Closing the modal on backwards navigation rather than going to the previous route.
+Reopening the modal on forwards navigation.
+
+Users can enjoy the photo gallery with modals that work seamlessly, sharing content, preserving context, and navigating smoothly.
+  when user click link login modal open when page refresh user navigate intercepting login page
+You can close the modal by calling router.back() or by using the Link component.
+
+
+Example: Photo Feed
+User clicks on a photo in the feed
+Instead of navigating to a new page, the photo is displayed in a modal over the feed
+Next.js intercepts the /photo/123 route and masks the URL, displaying the photo modal over the /feed route
+Soft Navigation
+User clicks on a shareable URL or refreshes the page
+The entire photo page is rendered instead of the modal
+No route interception occurs
+
+
+Intercepting routes allows you to load a route from another part of your application within the current layout. This routing paradigm can be useful when you want to display the content of a route without the user switching to a different context.
+

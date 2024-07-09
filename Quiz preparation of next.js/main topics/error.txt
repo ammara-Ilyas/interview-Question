@@ -1,0 +1,19 @@
+The error.js file convention allows you to gracefully handle unexpected runtime errors in nested routes.
+
+error.js automatically creates a React Error Boundary that wraps a nested child segment or page.js component.
+The React component exported from the error.js file is used as the fallback component.
+If an error is thrown within the error boundary, the error is contained, and the fallback component is rendered.
+When the fallback error component is active, layouts above the error boundary maintain their state and remain interactive, and the error component can display functionality to recover from the error.
+
+error.js boundaries do not catch errors thrown in layout.js or template.js components of the same segment.
+To handle errors within a specific layout or template, place an error.js file in the layout's parent segment.
+
+To handle errors within the root layout or template, use a variation of error.js called global-error.js.
+ it is important to note that global-error.js must define its own <html> and <body> tags.
+
+
+error in server
+
+During development, the Error object forwarded to the client will be serialized and include the message of the original error for easier debugging.
+During production, the Error object forwarded to the client only includes a generic message and digest property.
+
